@@ -2,6 +2,10 @@ body, ul {
     margin:0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+   
+}
+body {
+    background-color: lightgrey;
 }
 .container {
     margin:auto;
@@ -79,9 +83,10 @@ header h1 {
 }
 .logo {
     color: #61aed4;
-    margin-top: 20px;
+    margin-top: 32px;
     width: 200px;
-    height: 80px;
+    height: 61px;
+    
 }
 .logo:hover {
     cursor: pointer;
@@ -174,6 +179,7 @@ section ul {
 }
 .footerInfo {
     display: flex;
+    margin-bottom: 20px;
 }
 .logoFooterSize {
     font-size: 20px;
@@ -187,4 +193,12 @@ address {
     width: 50%;
     justify-content: center;
     align-items: center;
+}
+.reserved {
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 2px;
+    background-color: #4D4B54;
+    color:white;
+    font-size: 20px;
 }
