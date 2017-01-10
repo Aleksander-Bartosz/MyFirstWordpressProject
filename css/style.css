@@ -94,7 +94,10 @@ header h1 {
     width: 200px;
     height: 72px;
 }
-.logo:hover {
+.logo2:hover {
+    cursor: pointer;
+}
+.logo1:hover {
     cursor: pointer;
 }
 .scrollOpacity {
