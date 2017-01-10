@@ -1,161 +1,91 @@
-<!DOCTYPE HTML>
-<html lang="pl">
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name='viewport' content='initial-scale=1,width=device-width'>
-	<title>Warsztat</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link href="css/twitter.css" rel="stylesheet" type="text/css" />
-	<link href='https://fonts.googleapis.com/css?family=Raleway:500,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<script>
-document.addEventListener("DOMContentLoaded", function(){    
-    var place = document.querySelector(".clickPlace");
-    place.addEventListener("click", function(){
-		document.getElementById('ptaszek').classList.toggle('ptaszek2');
-	});
-});    
-	</script>	
-</head>
-
-<body>
-
-	<nav>
-		<div class="nav">
-			<ol>
-				<li><a href="#">O FIRMIE</a>
-				   	<ul>
-						<div class='triangle'></div>
-						<li id='firstli'><a href="#">Aktualności</a></li>
-						<li><a href="#">Nasz Team</a></li>
-						<li id='lastli'><a href="#">Historia</a></li>
-					</ul>
-				</li>
-				<li><a href="#">GALERIA</a></li>
-				<li><a href="#">KONTAKT</a>
-			</ol>
-			<span class='logo'>SIT <span class='spanC'>ON</span> CHAIR</span>
-		</div>	
-	</nav>
-	
-	<header>
-		<div class='HeaderContainer'>
-			<div class='iconleft'><i class="icon-left-open"></i></div>
-			<div class='iconright'><i class="icon-right-open"></i></div>	
-				<div class='chair'></div>
-					<div class='navBigText'>
-						<span class='spanC'>SIT</SPAN> ON OUR <span class='spanC'>CHAIR</SPAN>
-							<p class='smallText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Integer quis diam lectus.In non porta augue. Nam interdum orci magna, eget tincidunt magna aliquet varius.<br> Nullam nibh nibh, sagittis vel bibendum ac, vulputate in est. Sed egestas facilisis sem, vitae lobortis urna convallis vitae. Suspendisse in risus nec mauris laoreet auctor.</p>
-								<button class='HeaderButton'>ZOBACZ WIĘCEJ</button>
-					</div>
-		</div>	
-	</header>
-	
-	<section>
-		<div class='sectionContainer'>
-			<div class='sectionChair'>
-				<div class='sectionLineText'>
-					<p class='MiddleTextLine'>Chair CLAIR</p>
-				</div>
-			</div>
-				<div class='sectionChildChair'>
-					<div class='sectionLineText'>
-						<p class='MiddleTextLine'>Chair MARGARITA</p>
-					</div>
-				</div>
-					<div class='sectionText'>
-						<p class='Lineclass2'>Finds all inputs<br></p>
-						<p class='smallTextSection'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non velit scelerisque odio mollis imperdiet quis et lectus. Nam at dictum tortor, in volutpat ante. In lorem quam, <br><br>pellentesque et ex et, finibus luctus neque. Suspendisse vel erat justo. Vestibulum nibh lacus, lacinia et viverra vitae, tempor sit amet tortor. Donec in neque elit.</p>
-					</div>
-		</div>
-	</section>
-	
-	<article>
-		<div class='ArticleContainer'>
-			<br>
-			<p class='cost'>CENNIK</P>
-			
-				<div class='form'><div class='circle'><div class='SmallCircle'></div></div>
-						<span class='TextBasicPlan'>BASIC PLAN</span>
-							<br><br>
-								<div class='Loop'>
-									<span class='price'>85<sup>99</sup></span>
-										<p class='LoppText'>PLN/MSC</p>
-								</div>
-						<p class='BuyTextForm'>Zakup towaru + dowóz</p>
-						<p class='Servis'>Serwis</p>
-						<p> </p>
-							<button class='formButton'>DOŁĄCZ</button>
-				</div>
-				
-					<div class='form2'>
-						<div class='circle2'><div class='SmallCircle2'></div></div>
-							<span class='TextStandardPlan'>STANDARD PLAN</span>
-								<br><br>
-									<div class='Loop2'>
-										<span class='price2'>95<sup>99</sup></span>
-											<p class='LoppText2'>PLN/MSC</p>
-									</div>
-									<div class='form2TextContainer'>
-										<p class='TextForm2'>Zakup towaru+dowoz</p>
-										<p class='TextForm2a'>Serwis</p>
-										<p class='TextForm2b'>Gwarancja na 5 lat</p>
-									</div>
-							<button class='formButton2'>DOŁĄCZ</button>
-					</div>
-				
-				
-				<div class='form'><div class='circle'><div class='SmallCircle'></div></div>
-					<span class='TextBasicPlan'>ADVENCE PLAN</span>
-						<br><br>
-							<div class='Loop'>
-								<span class='price'>211<sup>99</sup></span>
-									<p class='LoppText'>PLN/MSC</p>
-							</div>
-								<div class='form3TextContainer'>
-									<p class='TextForm3'>Zakup towaru+dowoz</p>
-											<p class='TextForm3a'>Serwis</p>
-											<p class='TextForm3b'>Gwarancja na 6 lat</p>
-									<p class='TextForm3c'>Zakup towaru+dowoz</p>
-								</div>
-									<button class='formButton3'>DOŁĄCZ</button>
-				</div>
-		</div>
-	</article>
-	
-	<footer>
-		<div class='footerContainer'>
-			<p class='cost'>KONTAKT</P>
-				<form>
-					<br>
-						<input class='name' type="text" name="Imie" placeholder='imie'>
-							<br><br>
-							<input class='name' type="text" name="Imie" placeholder='e-mail'>
-						<br><br>
-					<textarea rows="5" placeholder='Wiadomość'></textarea>
-				</form>	
-											<div class='RightFooter'>
-												<div class='RedChair' ></div>
-													<div class='clickPlace'>
-														<div id='ptaszek'></div>
-														</div>
-													<div class='RightFooterText'>Zgadzam na przetwarzanie<br>danych osobowych</div>
-												<div class='ClearButton'><button class='footerButton'>WYŚLIJ</button></div>
-											</div>
-										
-		</div>	
-			<div class='FooterofTheFooters'>
-				<div class='LastFootText'><p>Copyright 2014 | All Right Reserved - Sit On Chair</p></div>
-					<div class='SmallPic'>
-						<div class='fr'></div>
-							<div class='v'></div>
-							<div class='strange'></div>
-						<div class='twitter'></div>
-					</div>
-				<div class='textFooterRight'>SIT <STRONG>ON</STRONG> CHAIR</div>
-			</div>
-	</footer>
-
-</body>
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=1;" name="viewport">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cssmapsplugin.com/5/jquery.cssmap.min.js"></script>  
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cssmap-poland/cssmap-poland.css" media="screen" />
+    <meta name="title" content="WestBio ENERGY"> 
+    <script src='app.js'></script>  
+  </head>
+  <body>
+      <div class='container'>
+          
+          <nav>
+              <div class='language'>
+                  <div class='languageItem'><b>PL</b></div>
+                  <div class='languageItem'>ENG</div>
+                  <div class='languageItem'>DE</div>
+                </div>
+              <img src='css/img/log.png' class='logo'/>
+              <img src='css/img/logo2.jpg' class='logo'/>
+              <ul>
+                  <li class='navigationMenuAbout'><i class="fa fa-users fa-3x" aria-hidden="true"></i><br><span><b>O nas</b></span></li>
+                  <li class='navigationMenuBio'><i class="fa fa-cog fa-3x" aria-hidden="true"></i><br><span><b>BioFarmy</b></span></li>
+                  <li class='navigationMenuContact'><i class="fa fa-comment-o fa-3x" aria-hidden="true"></i><br><span><b>Kontakt</b></span></li>
+              </ul>
+          </nav>
+          <header>
+              <div class='headerTextContainer'>
+                 <h1><span class='greenLogoPart'>West</span><span class='blueLogoPart'>Wind</span><span class='greyLogoPart'> BIOGAZ</span> </h1> 
+                  <div class='skew'></div>
+                  <div class='headerParaContainer'>
+                      <h2>Ut mattis dolor tortor.</h2>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis odio dictum, hendrerit ex sed, placerat massa. Nulla ac lectus non risus ornare scelerisque sed in odio. Donec venenatis cursus sapien, nec venenatis lacus sollicitudin nec. </p>
+                      <button>Sprawdź</button>
+                  </div>
+              </div>      
+          </header>
+            <article>
+              <img src='css/img/gazzzz.jpg'>
+                <div class='biogazInfo'>
+                    <h2 class='scrollAbout'>O Firmie</h2>
+                    <p>Nulla nec ultricies nisi. Pellentesque ac odio dolor. In ullamcorper elit a purus blandit lobortis. Quisque pellentesque lectus in eros porta, vitae condimentum quam tincidunt. Vivamus sollicitudin, leo et tincidunt interdum, augue tortor facilisis mi, eget ultricies elit nunc ut lacus. Cras venenatis, ligula ac iaculis porttitor, quam felis semper elit, in molestie quam lorem id nulla. Curabitur viverra diam ac auctor mollis. Maecenas sagittis quam quis lorem ornare malesuada. Pellentesque tempor ligula a libero interdum consequat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                </div>
+            </article>
+          <section>
+              <ul><h2>Lokalizacje Biofarm: </h2>
+                  <li>Nowe lokalizacje zostaną dodane wkrótce</li>
+              </ul>
+            <!-- CSSMap - Poland -->
+                <div id="map-poland">
+                 <ul class="poland">
+                  <li class="pl1"><a href="#dolnoslaskie">Dolnośląskie</a></li>
+                  <li class="pl2"><a href="#kujawsko-pomorskie">Kujawsko-pomorskie</a></li>
+                  <li class="pl3"><a href="#lubelskie">Lubelskie</a></li>
+                  <li class="pl4"><a href="#lubuskie">Lubuskie</a></li>
+                  <li class="pl5"><a href="#lodzkie">Łódzkie</a></li>
+                  <li class="pl6"><a href="#malopolskie">Małopolskie</a></li>
+                  <li class="pl7"><a href="#mazowieckie">Mazowieckie</a></li>
+                  <li class="pl8"><a href="#opolskie">Opolskie</a></li>
+                  <li class="pl9"><a href="#podkarpackie">Podkarpackie</a></li>
+                  <li class="pl10"><a href="#podlaskie">Podlaskie</a></li>
+                  <li class="pl11"><a href="#pomorskie">Pomorskie</a></li>
+                  <li class="pl12"><a href="#slaskie">Śląskie</a></li>
+                  <li class="pl13"><a href="#swietokrzyskie">Świętokrzyskie</a></li>
+                  <li class="pl14"><a href="#warminsko-mazurskie">Warmińsko-mazurskie</a></li>
+                  <li class="pl15"><a href="#wielkopolskie">Wielkopolskie</a></li>
+                  <li class="pl16"><a href="#zachodniopomorskie">Zachodniopomorskie</a></li>
+                 </ul>
+                </div>
+            <!-- END OF THE CSSMap - Poland -->
+          </section>
+          <footer>
+              <div class='footerInfo'>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2399.1963106325084!2d18.69236321574921!3d53.03480910570138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ccb5c1314e2e3%3A0xeefe4b49ebae6cb9!2zR2RhxYRza2EgNEEsIFRvcnXFhCwgUG9sc2th!5e0!3m2!1spl!2sus!4v1484050876510" width="500" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  
+                  <address>
+                    <b><span class='logoFooterSize'><span class='greenLogoPart'>West</span><span class='blueLogoPart'>Wind</span> <span class='greyLogoPart'>BIOGAZ</span> Sp. z o.o.</span><br>
+                    Ul. Gdańska 4a<br>
+                    87-100 Toruń<br>
+                    Tel: +48 56 652 89 10</b>
+                    </address>
+              </div>
+          </footer>
+      </div>    
+  </body>
 </html>
