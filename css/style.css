@@ -81,12 +81,18 @@ header h1 {
     padding-left: 210px;
     transform: rotate(-2deg);
 }
-.logo {
+.logo2 {
     color: #61aed4;
-    margin-top: 32px;
     width: 200px;
     height: 61px;
-    
+    position: relative;
+    top: -5px;
+}
+.logo1 {
+    color: #61aed4;
+    margin-top: 20px;
+    width: 200px;
+    height: 72px;
 }
 .logo:hover {
     cursor: pointer;
