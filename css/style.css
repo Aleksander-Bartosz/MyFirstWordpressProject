@@ -1,7 +1,7 @@
 body, ul {
     margin:0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
    
 }
 body {
@@ -70,14 +70,14 @@ ul li b {
 header {
     width: 1000px;
     height: 600px;
-    background-image: url(img/header.jpg);
+    background-image: url(img/headerL.jpg);
     margin-top: 115px;
     background-repeat: no-repeat;
     background-size: 1000px 600px;
 }
 header h1 {
     font-size: 45px;
-    padding-top: 230px;
+    padding-top: 235px;
     padding-left: 210px;
     transform: rotate(-2deg);
 }
@@ -107,13 +107,13 @@ header h1 {
     float:right;
     height: 226px;
     width: 500px;;
-    background-color: #4D4B54;
+    background-color: rgba(77, 75, 84, 0.8);
     position: relative;
     top: 10px;
     left: -28px;
-     transform: skew(-10deg) rotate(3deg);
-    -webkit-transform: skew(-10deg) rotate(3deg);
-    -moz-transform: skew(-10deg) rotate(3deg);
+    -webkit-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,18 +122,13 @@ header h1 {
 .headerParaContainer p {
     margin: 15px;
     color: white;
-    transform: skew(10deg) rotate(-3deg);
-    -webkit-transform: skew(10deg) rotate(-3deg);
+    
 }
 .headerParaContainer h2 {
     color:white;
     margin:0;
-    transform: skew(10deg) rotate(-3deg);
-    -webkit-transform: skew(10deg) rotate(-3deg);
 }
 header button {
-    transform: skew(10deg) rotate(-3deg);
-    -webkit-transform: skew(10deg) rotate(-3deg);
     width: 140px;
     height: 40px;
     border: none;
@@ -143,10 +138,26 @@ header button {
     color: white;
     background-color: #a8bd33;
     cursor: pointer;
-}   
+} 
+header button:hover {
+    background-color: #22af15;
+}
 article {
+    position: relative;
     display: flex;
     align-items: center;
+    background-color: white;
+    margin-top: 50px;
+    position: relative;
+}
+.tringle {
+    position: absolute;
+    left:480px;
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid lightgrey;
 }
 .biogazInfo {
     height: 400px;
@@ -159,12 +170,21 @@ article img {
     width: 350px;
     height: 350px;
     margin: 100px;
-    border-radius: 5%;
 }
 section {
-    display: flex;
-    background-color: #4D4B54;
+    position: relative;
+    background-image: url(img/grass.jpg);
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.coverSection {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 75, 84, 0.8);
+    display: flex;
+}
+
 section ul h2 {
     margin-top: 100px;
     text-align: center;
