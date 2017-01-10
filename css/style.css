@@ -1,0 +1,190 @@
+body, ul {
+    margin:0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    margin:auto;
+    width: 1000px;
+    height: 1500px;
+}
+nav {
+    width: 1000px;
+    position: fixed;
+    top:0;
+    background-color: white;
+    z-index: 100;
+   
+}
+nav ul {
+    list-style: none;
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    position: relative;
+    left: 80px;
+}
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+}
+nav ul li:hover {
+    cursor: pointer;
+}
+
+.language {
+    background-color: grey;
+    width: 120px;
+    float: right;
+    color:white;
+}
+.language .languageItem {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 20px;
+    width: 40px;
+    float: left;
+    text-align: center;
+}
+.languageItem:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.navigationMenuBio {
+    color:dimgrey;
+}
+.navigationMenuContact {
+    color:#a8bd33;
+}
+.navigationMenuAbout {
+    color: #61aed4;
+}
+ul li b {
+    color:black;
+}
+header {
+    width: 1000px;
+    height: 600px;
+    background-image: url(img/header.jpg);
+    margin-top: 115px;
+    background-repeat: no-repeat;
+    background-size: 1000px 600px;
+}
+header h1 {
+    font-size: 45px;
+    padding-top: 230px;
+    padding-left: 210px;
+    transform: rotate(-2deg);
+}
+.logo {
+    color: #61aed4;
+    margin-top: 20px;
+    width: 200px;
+    height: 80px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+.scrollOpacity {
+    opacity: 0.9;
+}
+.blueLogoPart {
+    color: #61aed4;
+}
+.greenLogoPart {
+    color: #a8bd33;
+}
+.greyLogoPart {
+   color: gray;
+}
+.headerParaContainer {
+    float:right;
+    height: 226px;
+    width: 500px;;
+    background-color: #4D4B54;
+    position: relative;
+    top: 10px;
+    left: -28px;
+     transform: skew(-10deg) rotate(3deg);
+    -webkit-transform: skew(-10deg) rotate(3deg);
+    -moz-transform: skew(-10deg) rotate(3deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headerParaContainer p {
+    margin: 15px;
+    color: white;
+    transform: skew(10deg) rotate(-3deg);
+    -webkit-transform: skew(10deg) rotate(-3deg);
+}
+.headerParaContainer h2 {
+    color:white;
+    margin:0;
+    transform: skew(10deg) rotate(-3deg);
+    -webkit-transform: skew(10deg) rotate(-3deg);
+}
+header button {
+    transform: skew(10deg) rotate(-3deg);
+    -webkit-transform: skew(10deg) rotate(-3deg);
+    width: 140px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 22px;
+    color: white;
+    background-color: #a8bd33;
+    cursor: pointer;
+}   
+article {
+    display: flex;
+    align-items: center;
+}
+.biogazInfo {
+    height: 400px;
+    width: 400px;
+}
+.biogazInfo h2 {
+    text-align: center;
+}
+article img {
+    width: 350px;
+    height: 350px;
+    margin: 100px;
+    border-radius: 5%;
+}
+section {
+    display: flex;
+    background-color: #4D4B54;
+}
+section ul h2 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+section ul {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+}
+.footerInfo {
+    display: flex;
+}
+.logoFooterSize {
+    font-size: 20px;
+}
+footer {
+    margin-top: 20px;
+}
+address {
+    display: flex;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
