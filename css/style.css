@@ -224,10 +224,20 @@ address {
     align-items: center;
 }
 .reserved {
-    text-align: center;
-    padding: 20px;
-    letter-spacing: 2px;
-    background-color: #4D4B54;
-    color:white;
-    font-size: 20px;
+    width: 980px;
+    height: 64px;;
+    background-image: url(img/grass.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.coverReserved {
+   height: 100%;
+   width: 100%;
+   line-height: 64px;
+   text-align: center;
+   letter-spacing: 2px;
+   font-size: 20px;
+   color:white;
+   background-color: rgba(77, 75, 84, 0.8);
 }
