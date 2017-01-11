@@ -118,7 +118,7 @@ header h1 {
     float:right;
     height: 226px;
     width: 500px;;
-    background-color: rgba(77, 75, 84, 0.8);
+    background-color: rgba(77, 75, 84, 0.85);
     position: relative;
     top: 10px;
     left: -28px;
@@ -184,7 +184,7 @@ article img {
 }
 section {
     position: relative;
-    background-image: url(img/grass.jpg);
+    background-image: url(img/grass2.jpg);
     margin-top: 50px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -192,28 +192,36 @@ section {
 .coverSection {
     width: 100%;
     height: 100%;
-    background-color: rgba(77, 75, 84, 0.8);
     display: flex;
 }
-
-section ul h2 {
-    margin-top: 100px;
-    text-align: center;
-}
-
-section ul {
-    width: 50%;
+.localKeeper {
+    width: 45%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+}
+section .localKeeper ul {
     color:white;
+}
+.iframeLocal {
+    height: 350px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgba(77, 75, 84, 0.85);
+    -webkit-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+}
+.iframeLocal ul {
+   display: flex;
+   align-items: center;
+   flex-direction: column; 
 }
 .footerInfo {
     display: flex;
     margin-bottom: 20px;
 }
 .logoFooterSize {
-    font-size: 20px;
+    font-size: 25px;
 }
 footer {
     margin-top: 20px;
@@ -236,10 +244,22 @@ address {
 .coverReserved {
    height: 100%;
    width: 100%;
-   line-height: 64px;
-   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    letter-spacing: 2px;
    font-size: 20px;
    color:white;
-   background-color: rgba(77, 75, 84, 0.8);
+}
+.textReserved {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 278px;
+    border-radius: 25px;
+    background-color: rgba(77, 75, 84, 0.8);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
 }
