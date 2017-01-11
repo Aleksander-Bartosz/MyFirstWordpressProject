@@ -219,12 +219,12 @@ footer {
 address {
     display: flex;
     text-align: center;
-    width: 50%;
+    width: 40%;
     justify-content: center;
     align-items: center;
 }
 .reserved {
-    width: 980px;
+    width: 1000px;
     height: 64px;;
     background-image: url(img/grass.jpg);
     background-repeat: no-repeat;
