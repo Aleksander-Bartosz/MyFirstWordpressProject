@@ -33,8 +33,10 @@ nav ul li {
     text-align: center;
     width: 100px;
 }
+
 nav ul li:hover {
     cursor: pointer;
+    opacity:0.8;
 }
 
 .language {
