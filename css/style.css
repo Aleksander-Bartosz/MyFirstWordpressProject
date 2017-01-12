@@ -86,7 +86,7 @@ header h1 {
     width: 573px;
     height: 98px;
     float: left;
-    background-image: url(img/nowy_22.png);
+    background-image: url('img/newLogo.png');
     background-repeat: no-repeat;
     background-position: -50px -30px;
     background-size: 692px 160px;
@@ -221,7 +221,7 @@ section .localKeeper ul {
 .footerLogo {
     height: 100px;
     margin-top: 50px;
-    background-image: url(img/nowy_22.png);
+    background-image: url('img/newLogo.png');
     width: 300px;
     background-repeat: no-repeat;
     background-position: -60px -36px;
@@ -249,7 +249,7 @@ address {
 .reserved {
     width: 1000px;
     height: 64px;;
-    background-image: url(img/grass.jpg);
+    background-image: url('img/grass.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
