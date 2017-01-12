@@ -23,10 +23,8 @@ nav {
 nav ul {
     list-style: none;
     float: right;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 15px;
-    position: relative;
-    left: 80px;
 }
 nav ul li {
     display: inline-block;
@@ -83,24 +81,24 @@ header h1 {
     padding-left: 210px;
     transform: rotate(-2deg);
 }
-.logo2 {
-    color: #61aed4;
-    width: 200px;
-    height: 61px;
-    position: relative;
-    top: -5px;
+.logo {
+    margin-top: 10px;
+    width: 573px;
+    height: 98px;
+    float: left;
+    background-image: url(img/nowy_22.png);
+    background-repeat: no-repeat;
+    background-position: -50px -30px;
+    background-size: 692px 160px;
 }
-.logo1 {
-    color: #61aed4;
-    margin-top: 20px;
-    width: 200px;
-    height: 72px;
+.hrefsLinks {
+    display: block;
+    float:left;
+    height: 100%;
+    width: 32%;
 }
-.logo2:hover {
-    cursor: pointer;
-}
-.logo1:hover {
-    cursor: pointer;
+.clearner {
+    clear: both;
 }
 .scrollOpacity {
     opacity: 0.9;
@@ -220,17 +218,31 @@ section .localKeeper ul {
     display: flex;
     margin-bottom: 20px;
 }
-.logoFooterSize {
-    font-size: 25px;
+.footerLogo {
+    height: 100px;
+    margin-top: 50px;
+    background-image: url(img/nowy_22.png);
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: -60px -36px;
+    background-size: 300%;
+}
+.coverFooter {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 124px;
+    top: -179px;
 }
 footer {
     margin-top: 20px;
 }
 address {
     display: flex;
+    flex-direction: column;
     text-align: center;
     width: 40%;
-    justify-content: center;
     align-items: center;
     background-color: white;
 }
