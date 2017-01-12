@@ -26,14 +26,7 @@ $(document).ready(function () {
         if (catchUnwantedColor.hasClass('active-region')) {
             catchUnwantedColor.removeClass('active-region');
     }},50)
-    var wind = $('body > div > nav > img:nth-child(2)');
-    var solar = $('body > div > nav > img:nth-child(3)');
-    wind.on('click', function () {
-        window.open("http://www.w-wind.de");
-    })
-    solar.on('click', function () {
-        window.open("http://www.w-solar.pl/");
-    })
+    
     var navHeight = navCatcher.height();
     $("body > div > nav > ul > li.navigationMenuAbout").click(function (){
                 $('html, body').animate({
