@@ -275,34 +275,97 @@ section .localKeeper ul {
 .footerInfo {
     display: flex;
     margin-bottom: 20px;
+    background-color: white;
 }
-.footerLogo {
-    height: 100px;
-    margin-top: 50px;
-    background-image: url('img/newLogo.png');
-    width: 300px;
-    background-repeat: no-repeat;
-    background-position: -60px -36px;
-    background-size: 300%;
-}
+
 .coverFooter {
     background-color: white;
-    width: 60px;
+    width: 90px;
     height: 60px;
     position: relative;
-    left: 124px;
-    top: -179px;
+    left: 235px;
+}
+.footerLogo {
+    width: 80%;
+    height: 75px;
+    background-image: url('img/newLogo.png');
+    background-repeat: no-repeat;
+    background-position: -68px -35px;
+    background-size: 280%;
+}
+.formSpaceDiv {
+    margin-top: 4%;
 }
 footer {
     margin-top: 20px;
 }
-address {
+.formKeeper {
+    width: 40%;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    width: 40%;
     align-items: center;
-    background-color: white;
+}
+.formButton {
+    floaT: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 140px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 22px;
+    color: white;
+    background-color: #a8bd33;
+    cursor: pointer;
+}
+.formButton:hover {
+    background-color: #22af15;
+}
+form {
+    margin-top: 3%;
+    width: 80%;
+}
+textarea {
+    margin-top: 2%;
+    outline-color: #61aed4;
+    width: 95%;
+    padding-left: 5px;
+}
+.footerInfoText {
+    text-align: center;
+    margin: 3%;
+}
+.error {
+    color:red;
+    font-weight: 700;
+}
+.holderColor::-webkit-input-placeholder {
+  color:black;
+}
+.holderColor::-moz-placeholder {
+  color:black;
+}
+.holderColor::-ms-input-placeholder{
+  color:black;
+}
+.holderColor:focus::-webkit-input-placeholder {
+  color:grey;
+}
+.holderColor:focus::-moz-placeholder {
+  color:grey;
+}
+.holderColor:focus::-ms-input-placeholder{
+  color:grey;
+}
+
+.formText {
+    width: 95%;
+    height: 40px;
+    margin-top: 2%;
+    outline-color: #61aed4;
+    padding-left: 5px;
 }
 .reserved {
     width: 1000px;
