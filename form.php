@@ -10,11 +10,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="cssmap-poland/cssmap-poland.css" media="screen" />
     <meta name="title" content="WestBio ENERGY"> 
-    <script src='app.js'></script>  
+    <script src='app.js'></script>
+    <script type="text/javascript">
+           $(document).ready(function () {
+               window.location='#foot';
+            });   
+        </script>  
   </head>
   <body>
       <div class='container'>
-          
           <nav>
               <div class='language'>
                   <div class='languageItem'><b>PL</b></div>
@@ -102,7 +106,7 @@
                 <!-- END OF THE CSSMap - Poland -->
                 </div>  
           </section>
-          <footer>
+          <footer id='foot'>
               
               <div class='footerInfo'>
                   <div>
@@ -116,21 +120,18 @@
                   </div>      
                   <div class='formKeeper'>
                       <form>
-                          <input type='text' placeholder="Imię i Nazwisko" class='formText holderColor' id='name'>
+                          <input type='text' placeholder="Imię i Nazwisko" class='formText holderColor' name ='name' id='name'>
                           <div class='error'></div>
-                          <input type='text' placeholder="E-mail" class='formText holderColor' id='mail'>
+                          <input type='text' placeholder="E-mail" class='formText holderColor' name ='email' id='mail'>
                           <div class='error'></div>
-                          <input type='text' placeholder="Temat" class='formText holderColor' id='theme'>
+                          <input type='text' placeholder="Temat" class='formText holderColor' name ='theme' id='theme'>
                           <div class='error'></div>
-                          <textarea rows="13" placeholder="Wiadomość" class='holderColor' id='msg'></textarea>
+                          <textarea rows="13" placeholder="Wiadomość" class='holderColor' name ='msg' id='msg'></textarea>
                           <div class='error'></div>
                           <div class='formSpaceDiv'>
-                              <button class='formButton'>Wyślij</button>
-                              <div class='footerLogo'></div>
+                             <h1 class='correctMsg'>Wiadomość została wysłana</h1>                           
                           </div>
                       </form>
-                      
-                       
                     </div>      
               </div>
               <div class='reserved'>
@@ -141,6 +142,15 @@
                 </div>
               </div>
           </footer>
-      </div>    
+      </div>
+        <?php
+            if (isset($_POST['submit'])) {
+                $emailBody = 'Imie i nazwisko: '.$_POST['name']."\n"
+                .'Email: '.$_POST['email']."\n"
+                .'Temat: '.$_POST['theme']."\n"
+                .'Wiadomość: '.$_POST['msg'];
+                mail('zaleski@w-solar.pl','Wiadomosc z piekla', $emailBody);
+            }
+        ?>
   </body>
 </html>
