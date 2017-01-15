@@ -27,6 +27,7 @@ $(document).ready(function () {
             catchUnwantedColor.removeClass('active-region');
     }},50)
     
+    // ScrollTo Code;
     var navHeight = navCatcher.height();
     $("body > div > nav > ul > li.navigationMenuAbout").click(function (){
                 $('html, body').animate({
@@ -43,4 +44,33 @@ $(document).ready(function () {
                     scrollTop: $("footer").offset().top-navHeight
                 }, 2000);
             });
+    // END OF THE ScrollTo Code;
+     var form = $('form');
+        form.on('submit', function () {
+            
+            var name = $('#name').val(),
+                mail = $('#mail').val(),
+                theme = $('#theme').val(),
+                msg =$('#msg').val();
+            var error =$('.error');
+            if ( name<5 ) {
+                error.eq(0).html('Imie musi mieć min 5 znaków');
+                return false;
+            }
+            else if ( mail.indexOf('@')<1 ) {
+                error.eq(1).html('Zła forma maila');
+                return false;
+            }
+            else if ( theme<5 ) {
+                error.eq(2).html('Prosze podać temat min 5 znaków');
+                return false;
+            } 
+            else if ( msg<10 ) {
+                error.eq(3).html('Prosze podać wiadomość min 10 znaków');
+                return false;
+            }
+            else {
+                return true;
+            }
+        })
 });
