@@ -359,7 +359,10 @@ textarea {
 .holderColor:focus::-ms-input-placeholder{
   color:grey;
 }
-
+.correctMsg {
+    font-size: 23px;
+    color: green;
+}
 .formText {
     width: 95%;
     height: 40px;
