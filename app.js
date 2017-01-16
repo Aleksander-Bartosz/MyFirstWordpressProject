@@ -44,6 +44,11 @@ $(document).ready(function () {
                     scrollTop: $("footer").offset().top-navHeight
                 }, 2000);
             });
+    $(".headerParaButton").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("footer").offset().top-navHeight
+                }, 2000);
+            });
     // END OF THE ScrollTo Code;
      var form = $('form');
         form.on('submit', function () {
@@ -53,7 +58,7 @@ $(document).ready(function () {
                 theme = $('#theme').val(),
                 msg =$('#msg').val();
             var error =$('.error');
-            if ( name<5 ) {
+            if ( name.length<5 ) {
                 error.eq(0).html('Imie musi mieć min 5 znaków');
                 return false;
             }
@@ -61,11 +66,11 @@ $(document).ready(function () {
                 error.eq(1).html('Zła forma maila');
                 return false;
             }
-            else if ( theme<5 ) {
+            else if ( theme.length<5 ) {
                 error.eq(2).html('Prosze podać temat min 5 znaków');
                 return false;
             } 
-            else if ( msg<10 ) {
+            else if ( msg.length<10 ) {
                 error.eq(3).html('Prosze podać wiadomość min 10 znaków');
                 return false;
             }
