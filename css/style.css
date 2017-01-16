@@ -416,7 +416,7 @@ textarea {
     
     .language {
         position: fixed;
-        right: 0;
+        right: 10%;
     }
     .sidenav {
         z-index: 150;
@@ -441,7 +441,16 @@ textarea {
         display: block;
         transition: 0.3s
     }
-
+    .logo {
+        margin-top: 2px;
+        width: 573px;
+        height: 57px;
+        float: left;
+        background-image: url('img/newLogo.png');
+        background-repeat: no-repeat;
+        background-position: -51px -23px;
+        background-size: 650px 100px;
+    }
     /* When you mouse over the navigation links, change their color */
     .sidenav a:hover {
         cursor: pointer;
@@ -464,7 +473,7 @@ textarea {
         width: 60px;
         height: 45px;
         float: right;
-        margin: 40px 20px 0px 0px;
+        margin: 5px 23px 0px 0px;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
@@ -617,15 +626,29 @@ textarea {
     nav {
         width: 500px;
     }
+    #nav-icon1 {
+        margin: 22px 3px 0px 0px;
+    }
+    #nav-icon1 span {
+        height: 3px;
+    }
+    .language {
+        position: fixed;
+        right: 0%;
+        font-size: 12px;
+    }
+    .language .languageItem {
+        height: 12px;
+    }
     .logo {
         margin-top: 10px;
         width: 402px;
-        height: 98px;
+        height: 50px;
         float: left;
         background-image: url('img/newLogo.png');
         background-repeat: no-repeat;
-        background-position: -50px -30px;
-        background-size: 523px 140px;
+        background-position: -49px -20px;
+        background-size: 490px 90px;
     }
     header {
         width: 500px;
