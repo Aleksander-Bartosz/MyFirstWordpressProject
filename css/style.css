@@ -97,8 +97,7 @@ header {
 .cb-slideshow,
 .cb-slideshow:after { 
     position: relative;
-    width: 1000px;
-    height: 600px; 
+    height: 100%;
     top: 0px;
     left: 0px;
     z-index: 0; 
@@ -119,8 +118,8 @@ ul {
     list-style: none;
 }
 .cb-slideshow li .cb-slideImg { 
-    width: 1000px;
-    height: 600px; 
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0px;
     left: 0px;
