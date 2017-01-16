@@ -149,7 +149,7 @@
                 .'Email: '.$_POST['email']."\n"
                 .'Temat: '.$_POST['theme']."\n"
                 .'Wiadomość: '.$_POST['msg'];
-                mail('zaleski@w-solar.pl','Wiadomosc z strony', $emailBody);
+                mail('info@w-bigoaz.pl','BIOGAZOWNIA Zapytanie', $emailBody);
             }
         ?>
   </body>
