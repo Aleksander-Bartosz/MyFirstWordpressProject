@@ -524,7 +524,9 @@ textarea {
       -o-transform: rotate(-135deg);
       transform: rotate(-135deg);
     }
-
+    .localKeeper {
+        margin-top: 30px;
+    }
     nav {
         width: 750px;
     }
@@ -571,14 +573,18 @@ textarea {
     }
     .poland {
         position: relative;
-        top: 50px;
+        
     }
     .cssmap-320 .poland-cities {
         margin-top: 50px;
     }
     section {
-        height: 400px;
+        height: 100%;
         width: 750px;
+    }
+    .coverSection {
+        flex-direction: column;
+        align-items: center;
     }
     .iframeLocal  {
         height: 320px;
