@@ -149,7 +149,7 @@
                 .'Email: '.$_POST['email']."\n"
                 .'Temat: '.$_POST['theme']."\n"
                 .'Wiadomość: '.$_POST['msg'];
-                mail('info@w-bigoaz.pl','BIOGAZOWNIA Zapytanie', $emailBody);
+                mail('info@w-biogaz.pl','BIOGAZOWNIA Zapytanie', $emailBody);
             }
         ?>
   </body>
