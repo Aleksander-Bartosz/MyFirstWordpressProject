@@ -35,44 +35,12 @@ $(document).ready(function () {
     });
 // END rwd menu    
 // CSSMap;
-    var windowSize = $(window).innerWidth()+20;
-    
        $("#map-poland").CSSMap({
           "size": 540,
           "cities": true,
           "tooltips": "sticky",
           "responsive": "auto"
         });
-    
-    if (windowSize<770 && windowSize>481) {
-       $("#map-poland").CSSMap({
-          "size": 320,
-          "cities": true,
-          "tooltips": "sticky",
-          "responsive": "auto"
-        }); 
-    }
-    
-    $(window).on('resize', function () {
-        var windowCheck = $(this).innerWidth()+20;
-        console.log(windowCheck);
-        if (windowCheck>770) {
-           $("#map-poland").CSSMap({
-              "size": 540,
-              "cities": true,
-              "tooltips": "sticky",
-              "responsive": "auto"
-            });
-        };
-        if (windowCheck<770 && windowCheck>481) {
-           $("#map-poland").CSSMap({
-              "size": 320,
-              "cities": true,
-              "tooltips": "sticky",
-              "responsive": "auto" 
-            }); 
-        }
-    });
 // END OF THE CSSMap;
     
     var catchUnwantedColor = $('#map-poland > ul > li');
