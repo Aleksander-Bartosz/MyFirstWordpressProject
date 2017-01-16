@@ -665,7 +665,7 @@ textarea {
     }
     section {
         width: 500px;
-        height: 770px;
+        height: 100%;
     }
     .coverSection {
         width: 100%;
