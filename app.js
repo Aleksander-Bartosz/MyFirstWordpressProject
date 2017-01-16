@@ -36,14 +36,14 @@ $(document).ready(function () {
 // END rwd menu    
 // CSSMap;
     var windowSize = $(window).innerWidth()+20;
-    if (windowSize>770) {
+    
        $("#map-poland").CSSMap({
           "size": 540,
           "cities": true,
           "tooltips": "sticky",
           "responsive": "auto"
         });
-    };
+    
     if (windowSize<770 && windowSize>481) {
        $("#map-poland").CSSMap({
           "size": 320,
@@ -101,7 +101,7 @@ $(document).ready(function () {
             });
     $(".headerParaButton").click(function (){
                 $('html, body').animate({
-                    scrollTop: $("footer").offset().top-navHeight
+                    scrollTop: $(".formKeeper").offset().top-navHeight
                 }, 2000);
             });
     $(".rwdMenuAbout").click(function (){
