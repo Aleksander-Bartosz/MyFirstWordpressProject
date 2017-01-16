@@ -40,14 +40,16 @@ $(document).ready(function () {
        $("#map-poland").CSSMap({
           "size": 540,
           "cities": true,
-          "tooltips": "sticky"
+          "tooltips": "sticky",
+          "responsive": "auto"
         });
     };
     if (windowSize<770 && windowSize>481) {
        $("#map-poland").CSSMap({
           "size": 320,
           "cities": true,
-          "tooltips": "sticky"
+          "tooltips": "sticky",
+          "responsive": "auto"
         }); 
     }
     
@@ -58,14 +60,16 @@ $(document).ready(function () {
            $("#map-poland").CSSMap({
               "size": 540,
               "cities": true,
-              "tooltips": "sticky"
+              "tooltips": "sticky",
+              "responsive": "auto"
             });
         };
         if (windowCheck<770 && windowCheck>481) {
            $("#map-poland").CSSMap({
               "size": 320,
               "cities": true,
-              "tooltips": "sticky"
+              "tooltips": "sticky",
+              "responsive": "auto" 
             }); 
         }
     });
