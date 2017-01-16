@@ -11,15 +11,66 @@ $(document).ready(function () {
             navCatcher.removeClass('scrollOpacity');
         }
     });
+// RWD menu    
+  $('#nav-icon1').click( function() {
+        var clickMenu = $(this);
+		clickMenu.toggleClass('open');
+        var main = $('.container');
+        var sideNav = $('#mySidenav');
+        if(clickMenu.hasClass('open')) {
+            main.css('padding-left','40%');
+            sideNav.css('width','40%');
+            
+        }
+    });  
+    $('.closebtn').click( function () {
+        var main = $('.container');
+        var sideNav = $('#mySidenav');
+        main.css('padding-left','0px');
+        sideNav.css('width','0px');
+        var changeIcon = $('#nav-icon1');
+        if (changeIcon.hasClass('open')) {
+            changeIcon.removeClass('open');
+        }
+    });
+// END rwd menu    
+// CSSMap;
+    var windowSize = $(window).innerWidth()+20;
+    if (windowSize>770) {
+       $("#map-poland").CSSMap({
+          "size": 540,
+          "cities": true,
+          "tooltips": "sticky"
+        });
+    };
+    if (windowSize<770 && windowSize>481) {
+       $("#map-poland").CSSMap({
+          "size": 320,
+          "cities": true,
+          "tooltips": "sticky"
+        }); 
+    }
     
-  // CSSMap;
-   $("#map-poland").CSSMap({
-      "size": 540,
-      "cities": true,
-      "tooltips": "sticky",
-      "responsive": "auto"
+    $(window).on('resize', function () {
+        var windowCheck = $(this).innerWidth()+20;
+        console.log(windowCheck);
+        if (windowCheck>770) {
+           $("#map-poland").CSSMap({
+              "size": 540,
+              "cities": true,
+              "tooltips": "sticky"
+            });
+        };
+        if (windowCheck<770 && windowCheck>481) {
+           $("#map-poland").CSSMap({
+              "size": 320,
+              "cities": true,
+              "tooltips": "sticky"
+            }); 
+        }
     });
 // END OF THE CSSMap;
+    
     var catchUnwantedColor = $('#map-poland > ul > li');
     
     setTimeout( function () {
@@ -49,7 +100,24 @@ $(document).ready(function () {
                     scrollTop: $("footer").offset().top-navHeight
                 }, 2000);
             });
+    $(".rwdMenuAbout").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".scrollAbout").offset().top-navHeight
+                }, 2000);
+            });
+    $(".rwdMenuBio").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".localKeeper").offset().top-navHeight
+                }, 2000);
+            });
+    $(".rwdMenuContact").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".formKeeper").offset().top-navHeight
+                }, 2000);
+            });
     // END OF THE ScrollTo Code;
+    
+    // Form Validator
      var form = $('form');
         form.on('submit', function () {
             
@@ -78,4 +146,5 @@ $(document).ready(function () {
                 return true;
             }
         })
+    // end of Form validator    
 });
