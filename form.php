@@ -144,13 +144,11 @@
           </footer>
       </div>
         <?php
-            if (isset($_POST['submit'])) {
-                $emailBody = 'Imie i nazwisko: '.$_POST['name']."\n"
-                .'Email: '.$_POST['email']."\n"
-                .'Temat: '.$_POST['theme']."\n"
-                .'Wiadomość: '.$_POST['msg'];
-                mail('info@w-biogaz.pl','BIOGAZOWNIA Zapytanie', $emailBody);
-            }
-        ?>
+				$emailBody = "Imie i nazwisko: ".$_POST['name']."\n"
+                ."Email: ".$_POST['email']."\n"
+                ."Temat: ".$_POST['theme']."\n"
+                ."Wiadomość: ".$_POST['msg'];
+                mail("info@w-biogaz.pl","BIOGAZOWNIA Zapytanie", $emailBody);
+         ?>
   </body>
 </html>

@@ -10,7 +10,6 @@ body {
 .container {
     margin:auto;
     width: 1000px;
-    height: 1500px;
 }
 nav {
     width: 1000px;
@@ -20,19 +19,19 @@ nav {
     z-index: 100;
    
 }
-nav ul {
+nav .normalMenu {
     list-style: none;
     float: right;
     margin-top: 10px;
     margin-bottom: 15px;
 }
-nav ul li {
+nav .normalMenu li {
     display: inline-block;
     text-align: center;
     width: 100px;
 }
 
-nav ul li:hover {
+nav .normalMenu li:hover {
     cursor: pointer;
     opacity:0.8;
 }
@@ -257,6 +256,10 @@ section {
 section .localKeeper ul {
     color:white;
 }
+section {
+    height: 500px;
+    width: 1000px;
+}
 .iframeLocal {
     height: 350px;
     width: 90%;
@@ -398,4 +401,302 @@ textarea {
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+}
+#nav-icon1 {
+    display: none;
+}
+.sidenav {
+    display: none;
+}
+@media all and (max-width: 768px) {
+    .container {
+        width: 750px;
+        transition: padding .5s;
+    }
+    
+    .language {
+        position: fixed;
+        right: 0;
+    }
+    .sidenav {
+        display: block;
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+        cursor: pointer;
+        color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    #nav-icon1 {
+        display: block;
+        width: 60px;
+        height: 45px;
+        float: right;
+        margin: 40px 20px 0px 0px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+    #nav-icon1 span {
+        display: block;
+        position: absolute;
+        height: 9px;
+        width: 100%;
+        background: #d3531a;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+    #nav-icon1 span:nth-child(1) {
+      top: 0px;
+    }
+
+    #nav-icon1 span:nth-child(2) {
+      top: 18px;
+    }
+
+    #nav-icon1 span:nth-child(3) {
+      top: 36px;
+    }
+    #nav-icon1.open span:nth-child(1) {
+      top: 18px;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+    }
+
+    #nav-icon1.open span:nth-child(2) {
+      opacity: 0;
+      left: -60px;
+    }
+
+    #nav-icon1.open span:nth-child(3) {
+      top: 18px;
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+    }
+
+    nav {
+        width: 750px;
+    }
+    nav ul {
+        display: none;
+    }
+    header {
+        width: 750px;
+        height: 500px;
+    }
+    .headerParaContainer {
+        top: 260px;
+        height: 210px;
+        width: 450px;
+    }
+    .headerParaContainer h1 {
+        font-size: 25px;
+    }
+    .headerParaContainer p {
+        font-size: 15px;
+    }
+    article {
+        width: 750px;
+    }
+    .tringle  {
+        left:365px;
+    }
+    article img {
+    width: 250px;
+    height: 250px;
+    margin: 80px 60px 80px 80px;
+    }
+    .biogazInfo {
+    height: 350px;
+    width: 350px;
+    }
+    .biogazInfo h2 {
+        font-size: 20px;
+    }
+    .biogazInfo p {
+        font-size: 14px;
+        margin: 25px;
+        text-align: center;
+    }
+    .poland {
+        position: relative;
+        top: 50px;
+    }
+    .cssmap-320 .poland-cities {
+        margin-top: 50px;
+    }
+    section {
+        height: 400px;
+        width: 750px;
+    }
+    .iframeLocal  {
+        height: 320px;
+    }
+    .iframeLocal ul h2 {
+       font-size: 20px; 
+    }
+    .iframeLocal ul li {
+       font-size: 14px; 
+    }
+    .footerInfoText {
+        font-size: 14px;
+    }
+    .formKeeper {
+        width: 60%;
+    }
+    iframe {
+        width: 350px;
+        height: 350px;
+    }
+    footer {
+        width: 750px;
+    }
+    .reserved {
+        width: 750px; 
+    }
+    
+    .correctMsg {
+    font-size: 20px;
+    }
+}
+@media all and (max-width: 568px) {
+    nav {
+        width: 500px;
+    }
+    .logo {
+        margin-top: 10px;
+        width: 402px;
+        height: 98px;
+        float: left;
+        background-image: url('img/newLogo.png');
+        background-repeat: no-repeat;
+        background-position: -50px -30px;
+        background-size: 523px 140px;
+    }
+    header {
+        width: 500px;
+        height: 400px;
+    }
+    .headerParaContainer {
+        top: 216px;
+        height: 170px;
+        width: 320px;
+    }
+    .headerParaContainer h1 {
+        font-size: 20px;
+    }
+    .headerParaContainer p {
+        font-size: 12px;
+    }
+    .headerParaButton {
+        width: 140px;
+        height: 30px;
+        font-size: 16px;
+    }
+    article {
+        width: 500px;
+        flex-direction: column;
+    }
+    .tringle {
+        left: 240px;
+    }
+    article img {
+        width: 250px;
+        height: 250px;
+        margin: 80px 60px 10px 80px;
+    }
+    .biogazInfo {
+        height: 260px;
+        width: 350px;
+    }
+    .biogazInfo p {
+        font-size: 12px;
+    }
+    section {
+        width: 500px;
+        height: 660px;
+    }
+    .coverSection {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .localKeeper {
+        width: 60%;
+        margin-top: 40px;
+    }
+    .cssmap-320 .poland-cities {
+        margin-top: 0;
+    }
+    .poland {
+        top:0;
+    }
+    footer {
+        width: 500px;
+    }
+    .footerInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .formKeeper {
+        width: 80%;
+    }
+    .reserved {
+        width: 500px;
+    }
+    .container {
+        width: 500px;
+    }
 }
