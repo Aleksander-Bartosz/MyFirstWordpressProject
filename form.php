@@ -149,7 +149,7 @@
                 .'Email: '.$_POST['email']."\n"
                 .'Temat: '.$_POST['theme']."\n"
                 .'Wiadomość: '.$_POST['msg'];
-                mail('zaleski@w-solar.pl','Wiadomosc z piekla', $emailBody);
+                mail('zaleski@w-solar.pl','Wiadomosc z strony', $emailBody);
             }
         ?>
   </body>
