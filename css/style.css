@@ -412,6 +412,7 @@ iframe {
    width: 600px;
     height:400px;
     border: 0px;
+    
 }
 @media all and (max-width: 768px) {
     .container {
