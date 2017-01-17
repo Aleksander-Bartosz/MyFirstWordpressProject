@@ -725,3 +725,92 @@ textarea {
         width: 500px;
     }
 }
+@media all and (max-width: 320px) {
+    nav {
+        width: 320px;
+    }
+    iframe {
+        width: 320px;
+    }
+    .container {
+        width: 320px;
+    }
+    .language {
+        right: 4%;
+        font-size: 10px;
+    }
+    .logo {
+        width: 250px;
+        height: 50px;
+        background-position: -30px -21px;
+        background-size: 331px 90px;
+    }
+    header {
+        height: 400px;
+        width: 320px;
+    }
+    .headerParaContainer {
+        top: 240px;
+        height: 130px;
+        width: 190px;
+    }
+    .headerParaContainer h1 {
+        font-size: 13px;
+    }
+    .headerParaContainer p {
+        font-size: 10px;
+        margin: 5px;
+    }
+    .headerParaButton {
+        width: 90px;
+        height: 19px;
+        font-size: 14px;
+    }
+    .tringle {
+        left: 150px;
+    }
+    article {
+        width: 320px;
+        margin-top: 15px;
+    }
+    .biogazInfo {
+        width: 100%;
+    }
+    .biogazInfo h2 {
+        font-size: 15px;
+    }
+    .biogazInfo p {
+        font-size: 10px;
+    }
+    section {
+        width: 320px;
+        margin-top: 15px;
+    }
+    .localKeeper ul {
+       text-align: center;
+    }
+    .iframeLocal ul h2 {
+        font-size: 15px;
+    }
+    .iframeLocal ul li {
+        font-size: 12px;
+    }
+    footer {
+        width: 320px;
+    }
+    .footerLogo {
+        height: 60px;
+        background-position: -68px -35px;
+        background-size: 350%;
+    }
+    .formButton {
+        margin-top: -6px;
+        margin-right: -9px;
+        width: 78px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .reserved {
+        width: 100%;
+    }
+}
