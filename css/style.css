@@ -593,6 +593,7 @@ textarea {
     }
     .iframeLocal  {
         height: 320px;
+        width: 80%;
     }
     .iframeLocal ul h2 {
        font-size: 20px; 
@@ -617,7 +618,7 @@ textarea {
     font-size: 20px;
     }
 }
-@media all and (max-width: 568px) {
+@media all and (max-width: 700px) {
     nav {
         width: 500px;
     }
@@ -695,7 +696,7 @@ textarea {
         flex-direction: column;
     }
     .localKeeper {
-        width: 60%;
+        width: 90%;
         margin-top: 40px;
     }
     .cssmap-320 .poland-cities {
