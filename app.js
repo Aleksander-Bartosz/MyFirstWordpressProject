@@ -18,16 +18,15 @@ $(document).ready(function () {
         var main = $('.container');
         var sideNav = $('#mySidenav');
         if(clickMenu.hasClass('open')) {
-            main.css('padding-left','40%');
-            sideNav.css('width','40%');
-            
+            main.css('padding-top','150px');
+            sideNav.css('height','150px');
         }
     });  
     $('.closebtn').click( function () {
         var main = $('.container');
         var sideNav = $('#mySidenav');
-        main.css('padding-left','0px');
-        sideNav.css('width','0px');
+        main.css('padding-top','0px');
+        sideNav.css('height','0%');
         var changeIcon = $('#nav-icon1');
         if (changeIcon.hasClass('open')) {
             changeIcon.removeClass('open');
@@ -51,12 +50,13 @@ $(document).ready(function () {
     }},50)
     
     // ScrollTo Code;
+    var rwdMenuHeight = $('.sidenav').height();
     var navHeight = navCatcher.height();
     $("body > div > nav > ul > li.navigationMenuAbout").click(function (){
                 $('html, body').animate({
                     scrollTop: $(".scrollAbout").offset().top-navHeight
-                }, 2000);
-            });
+                },2000);
+        });
       $("body > div > nav > ul > li.navigationMenuBio").click(function (){
                 $('html, body').animate({
                     scrollTop: $("#map-poland").offset().top-navHeight
@@ -73,18 +73,21 @@ $(document).ready(function () {
                 }, 2000);
             });
     $(".rwdMenuAbout").click(function (){
+                var rwdMenuHeight = $('.sidenav').height();
                 $('html, body').animate({
-                    scrollTop: $(".scrollAbout").offset().top-navHeight
+                    scrollTop: $(".scrollAbout").offset().top-navHeight-rwdMenuHeight
                 }, 2000);
             });
     $(".rwdMenuBio").click(function (){
+                var rwdMenuHeight = $('.sidenav').height();
                 $('html, body').animate({
-                    scrollTop: $(".localKeeper").offset().top-navHeight
+                    scrollTop: $(".localKeeper").offset().top-navHeight-rwdMenuHeight
                 }, 2000);
             });
     $(".rwdMenuContact").click(function (){
+                var rwdMenuHeight = $('.sidenav').height();
                 $('html, body').animate({
-                    scrollTop: $(".formKeeper").offset().top-navHeight
+                    scrollTop: $(".formKeeper").offset().top-navHeight-rwdMenuHeight
                 }, 2000);
             });
     // END OF THE ScrollTo Code;
