@@ -719,7 +719,7 @@ textarea {
         width: 500px;
     }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 490px) {
     nav {
         width: 320px;
     }
