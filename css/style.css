@@ -408,6 +408,10 @@ textarea {
 .sidenav {
     display: none;
 }
+iframe {
+   width: 600px;
+    height:400px;
+}
 @media all and (max-width: 768px) {
     .container {
         width: 750px;
