@@ -373,7 +373,7 @@ textarea {
     padding-left: 5px;
 }
 .reserved {
-    width: 1000px;
+    width: 100%;
     height: 64px;;
     background-image: url('img/grass.jpg');
     background-repeat: no-repeat;
@@ -613,10 +613,6 @@ textarea {
     footer {
         width: 750px;
     }
-    .reserved {
-        width: 750px; 
-    }
-    
     .correctMsg {
     font-size: 20px;
     }
@@ -717,9 +713,6 @@ textarea {
     }
     .formKeeper {
         width: 80%;
-    }
-    .reserved {
-        width: 500px;
     }
     .container {
         width: 500px;
