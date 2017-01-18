@@ -15,7 +15,7 @@
     <script src='app.js'></script>  
     <script type="text/javascript">
            $(document).ready(function () {
-               window.location='#foot';
+               window.location='#footer';
             });   
         </script>
  </head>
@@ -28,7 +28,7 @@
                   <div class='languageItem'>DE</div>
                 </div>
               <div class ='logo'>
-                  <a class='hrefsLinks' id='reload'></a>
+                  <a class='hrefsLinks' id='reloadBack'></a>
                   <a class='hrefsLinks' href="http://www.w-wind.de/" target="_blank"></a>
                   <a class='hrefsLinks' href="http://www.w-solar.pl/pl/" target="_blank"></a>
                   <div class='clearner'></div>

@@ -14,6 +14,9 @@ $(document).ready(function () {
     $('#reload').on('click', function () {
                     location.reload();
     });
+    $('#reloadBack').on('click', function () {
+                    window.history.back();
+    });
 // RWD menu    
   $('#nav-icon1').click( function() {
         var clickMenu = $(this);

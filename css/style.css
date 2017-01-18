@@ -85,6 +85,9 @@ ul li b {
 #reload:hover {
         cursor: pointer;
 }
+#reloadBack:hover {
+    cursor: pointer;
+}
 .clearner {
     clear: both;
 }
