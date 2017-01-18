@@ -11,6 +11,9 @@ $(document).ready(function () {
             navCatcher.removeClass('scrollOpacity');
         }
     });
+    $('#reload').on('click', function () {
+                    location.reload();
+    });
 // RWD menu    
   $('#nav-icon1').click( function() {
         var clickMenu = $(this);

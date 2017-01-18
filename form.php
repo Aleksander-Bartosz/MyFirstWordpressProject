@@ -28,7 +28,7 @@
                   <div class='languageItem'>DE</div>
                 </div>
               <div class ='logo'>
-                  <a class='hrefsLinks' href="https://aleksander-bartosz.github.io/bio/"></a>
+                  <a class='hrefsLinks' id='reload'></a>
                   <a class='hrefsLinks' href="http://www.w-wind.de/" target="_blank"></a>
                   <a class='hrefsLinks' href="http://www.w-solar.pl/pl/" target="_blank"></a>
                   <div class='clearner'></div>
