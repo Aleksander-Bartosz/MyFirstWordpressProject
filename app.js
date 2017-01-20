@@ -81,19 +81,19 @@ $(document).ready(function () {
     $(".rwdMenuAbout").click(function (){
                 var rwdMenuHeight = $('.sidenav').height();
                 $('html, body').animate({
-                    scrollTop: $(".scrollAbout").offset().top-navHeight-rwdMenuHeight
+                    scrollTop: $(".scrollAbout").offset().top-rwdMenuHeight
                 }, 2000);
             });
     $(".rwdMenuBio").click(function (){
                 var rwdMenuHeight = $('.sidenav').height();
                 $('html, body').animate({
-                    scrollTop: $(".localKeeper").offset().top-navHeight-rwdMenuHeight
+                    scrollTop: $(".localKeeper").offset().top-rwdMenuHeight
                 }, 2000);
             });
     $(".rwdMenuContact").click(function (){
                 var rwdMenuHeight = $('.sidenav').height();
                 $('html, body').animate({
-                    scrollTop: $(".formKeeper").offset().top-navHeight-rwdMenuHeight
+                    scrollTop: $(".formKeeper").offset().top-rwdMenuHeight
                 }, 2000);
             });
     // END OF THE ScrollTo Code;
