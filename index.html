@@ -15,7 +15,11 @@
     <script src='app.js'></script>  
   </head>
   <body>
-      
+      <script>
+             $(document).ready(function () {
+               window.location= '#head';
+            });   
+      </script>
       <div class='container'>
             <nav>
               <div class='language'>
@@ -24,7 +28,7 @@
                   <div class='languageItem'>DE</div>
                 </div>
               <div class ='logo'>
-                  <a class='hrefsLinks' href="https://aleksander-bartosz.github.io/bio/"></a>
+                  <a class='hrefsLinks' id='reload'></a>
                   <a class='hrefsLinks' href="http://www.w-wind.de/" target="_blank"></a>
                   <a class='hrefsLinks' href="http://www.w-solar.pl/pl/" target="_blank"></a>
                   <div class='clearner'></div>
@@ -46,7 +50,7 @@
                   <a class='rwdMenuContact'>Kontakt</a>
                 </div>
           </nav>
-          <header>
+          <header id='head'>
              <ul class="cb-slideshow">
                 <li class='cb-slideList'>
                     <span class='cb-slideImg'></span>
@@ -68,7 +72,7 @@
                  </li>
                  <div class='headerParaContainer'>
                           <h1><span  class='greenLogoPart'>West</span><span  class='blueLogoPart'>Wind</span> BIOGAZ</h1>
-                          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis odio dictum, hendrerit ex sed, placerat massa. Nulla ac lectus non risus ornare scelerisque sed in odio. Donec venenatis cursus sapien, nec venenatis lacus sollicitudin nec. </p>
+                          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis odio dictum, hendrerit ex sed, placerat massa. Nulla ac lectus non risus ornare scelerisque sed in odio. Donec venenatis cursus sapien, nec venenatis lacus sollicitudin nec.Umc </p>
                           <button class='headerParaButton'>Sprawdź</button>
                     </div> 
               </ul> 
