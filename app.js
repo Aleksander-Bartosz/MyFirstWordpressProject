@@ -60,7 +60,7 @@ $(document).ready(function () {
     var navHeight = navCatcher.height();
     $("body > div > nav > ul > li.navigationMenuAbout").click(function (){
                 $('html, body').animate({
-                    scrollTop: $(".scrollAbout").offset().top-navHeight
+                    scrollTop: $(".biogazInfo").offset().top-navHeight
                 },2000);
         });
       $("body > div > nav > ul > li.navigationMenuBio").click(function (){
