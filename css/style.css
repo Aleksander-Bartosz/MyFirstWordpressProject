@@ -545,6 +545,7 @@ iframe {
     }
     .localKeeper {
         margin-top: 30px;
+        width: 70%;
     }
     nav {
         width: 750px;
