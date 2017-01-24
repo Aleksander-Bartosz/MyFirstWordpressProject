@@ -383,9 +383,6 @@ textarea {
     background-image: url('img/grass.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    
 }
 .coverReserved {
    height: 100%;
