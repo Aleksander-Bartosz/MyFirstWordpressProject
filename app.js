@@ -93,7 +93,7 @@ $(document).ready(function () {
     $(".rwdMenuContact").click(function (){
                 var rwdMenuHeight = $('.sidenav').height();
                 $('html, body').animate({
-                    scrollTop: $(".formKeeper").offset().top-rwdMenuHeight
+                    scrollTop: $("address").offset().top-rwdMenuHeight
                 }, 2000);
             });
     // END OF THE ScrollTo Code;
