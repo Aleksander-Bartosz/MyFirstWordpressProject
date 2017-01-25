@@ -184,6 +184,7 @@ ul {
     margin: 15px;
     color: white;
     text-align: center;
+    width: 100%;
 }
 .headerParaContainer h1 {
     text-shadow: -1px -1px 2px rgba(150, 150, 150, 1);
