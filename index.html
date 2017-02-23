@@ -2,7 +2,7 @@
 <html lang="pl-PL">
   <head>
     <meta charset="UTF-8"/>
-    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=1;" name="viewport"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1" name="viewport"/>
     <meta name='description' content='BIO gazownie w polsce, instalacje inwestycje oraz nowe projekty !'/>
     <meta name='keywords' content="biogazownie, westwind, westwind biogaz, biogazownie w polsce, projektowanie biogazowni, produkcja ekoligocznej energii, rolnictwo, Biogazownia - instalacja, organiczne materiały wsadowe,energia odnawialna, ekologiczna energia"/>  
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -39,15 +39,15 @@
                   <span></span>
               </div>
               <ul class='normalMenu'>
-                  <li class='navigationMenuAbout'><i class="fa fa-users fa-3x" aria-hidden="true"></i><br><span><b>O nas</b></span></li>
-                  <li class='navigationMenuBio'><i class="fa fa-bolt fa-3x" aria-hidden="true"></i><br><span><b>Biogazownie</b></span></li>
-                  <li class='navigationMenuContact'><i class="fa fa-comment-o fa-3x" aria-hidden="true"></i><br><span><b>Kontakt</b></span></li>
+                  <li class='navigationMenuAbout scroller' data-id='about'><i class="fa fa-users fa-3x" aria-hidden="true"></i><br><span><b>O nas</b></span></li>
+                  <li class='navigationMenuBio scroller' data-id='bio'><i class="fa fa-bolt fa-3x" aria-hidden="true"></i><br><span><b>Biogazownie</b></span></li>
+                  <li class='navigationMenuContact scroller' data-id='contact'><i class="fa fa-comment-o fa-3x" aria-hidden="true"></i><br><span><b>Kontakt</b></span></li>
               </ul>
                 <div id="mySidenav" class="sidenav">
                   <a class="closebtn">&times;</a>
-                  <a class='rwdMenuAbout'>O nas</a>
-                  <a class='rwdMenuBio'>Biogazownie</a>
-                  <a class='rwdMenuContact'>Kontakt</a>
+                  <a class='rwdMenuAbout scroller' data-id='about'>O nas</a>
+                  <a class='rwdMenuBio scroller' data-id='bio'>Biogazownie</a>
+                  <a class='rwdMenuContact scroller' data-id='contact'>Kontakt</a>
                 </div>
           </nav>
           <header id='head'>
@@ -77,7 +77,7 @@
                     </div> 
               </ul> 
       </header>
-            <article>
+            <article id='about'>
                 <div class='tringle'></div>
               <img src='css/img/gazzzz.jpg' alt='connection Problem'>
                 <div class='biogazInfo'>
@@ -85,7 +85,7 @@
                     <p>Nulla nec ultricies nisi. Pellentesque ac odio dolor. In ullamcorper elit a purus blandit lobortis. Quisque pellentesque lectus in eros porta, vitae condimentum quam tincidunt. Vivamus sollicitudin, leo et tincidunt interdum, augue tortor facilisis mi, eget ultricies elit nunc ut lacus. Cras venenatis, ligula ac iaculis porttitor, quam felis semper elit, in molestie quam lorem id nulla. Curabitur viverra diam ac auctor mollis. Maecenas sagittis quam quis lorem ornare malesuada. Pellentesque tempor ligula a libero interdum consequat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
                 </div>
             </article>
-          <section>
+          <section id='bio'>
               <div class='tringle'></div>
               <div class='coverSection'>
                   <div class='localKeeper'>
@@ -121,7 +121,7 @@
           </section>
           <footer id='footer'>
               
-              <div class='footerInfo'>
+              <div class='footerInfo' id='contact'>
                   <div>
                       <address class='footerInfoText'>
                           <b>WestWind BIOGAZ</b> Sp. z o.o. Ul. Gdańska 4a

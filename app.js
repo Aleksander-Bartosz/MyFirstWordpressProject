@@ -56,46 +56,7 @@ $(document).ready(function () {
     }},50)
     
     // ScrollTo Code;
-    var rwdMenuHeight = $('.sidenav').height();
-    var navHeight = navCatcher.height();
-    $("body > div > nav > ul > li.navigationMenuAbout").click(function (){
-                $('html, body').animate({
-                    scrollTop: $(".biogazInfo").offset().top-navHeight
-                },2000);
-        });
-      $("body > div > nav > ul > li.navigationMenuBio").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#map-poland").offset().top-navHeight
-                }, 2000);
-            });
-      $("body > div > nav > ul > li.navigationMenuContact").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("footer").offset().top-navHeight
-                }, 2000);
-            });
-    $(".headerParaButton").click(function (){
-                $('html, body').animate({
-                    scrollTop: $(".formKeeper").offset().top-navHeight
-                }, 2000);
-            });
-    $(".rwdMenuAbout").click(function (){
-                var rwdMenuHeight = $('.sidenav').height();
-                $('html, body').animate({
-                    scrollTop: $(".scrollAbout").offset().top-rwdMenuHeight
-                }, 2000);
-            });
-    $(".rwdMenuBio").click(function (){
-                var rwdMenuHeight = $('.sidenav').height();
-                $('html, body').animate({
-                    scrollTop: $(".localKeeper").offset().top-rwdMenuHeight
-                }, 2000);
-            });
-    $(".rwdMenuContact").click(function (){
-                var rwdMenuHeight = $('.sidenav').height();
-                $('html, body').animate({
-                    scrollTop: $("address").offset().top-rwdMenuHeight
-                }, 2000);
-            });
+    
     // END OF THE ScrollTo Code;
     
     // Form Validator
@@ -128,4 +89,37 @@ $(document).ready(function () {
             }
         })
     // end of Form validator    
+});
+document.addEventListener("DOMContentLoaded", function() {
+   var menuHeight = document.getElementsByTagName('nav')[0].offsetHeight;
+        console.log(menuHeight);
+        var elementScroll = document.getElementsByClassName('scroller');
+    
+        function scroll(el) {
+          var scrollEl = document.getElementById(el).offsetTop-menuHeight;
+          var start = window.scrollY;
+          var move = 20;
+          var adder =setInterval(function () {
+              var check = window.scrollY;
+              if ( start>scrollEl ) {
+                  start=start-move
+                  
+              }
+              else if ( start<scrollEl ) {
+                  start=start+move;
+                  if ( start>scrollEl ){
+                    clearInterval(adder);
+                  }
+              }
+              window.scrollTo(0, start)
+              console.log(start)
+              
+          },10)
+        }
+        for (var i=0; i<elementScroll.length; i++) {
+            elementScroll[i].addEventListener('click', function () {
+                var element = this.dataset.id;
+                scroll(element);
+            });
+        }
 });
