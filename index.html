@@ -170,8 +170,8 @@
                           <textarea rows="13" placeholder="Wiadomość" class='holderColor' name ='msg' id='msg'></textarea>
                           <div class='error'></div>
                           <div class='formSpaceDiv'>
-                              <button class='formButton'>Wyślij</button>
-                              <div class='footerLogo'></div>
+                              <button class="formButton">Wyślij</button>
+                              <div class="footerLogo"></div>
                           </div>
                       </form>
                     </div>      
@@ -241,5 +241,12 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyL2sNvdz0359UHeTRR4BFTz-yYUbMp-Q&callback=initMap">
     </script>
+    <?php
+				$emailBody = "Imie i nazwisko: ".$_POST['name']."\n"
+                ."Email: ".$_POST['email']."\n"
+                ."Temat: ".$_POST['theme']."\n"
+                ."Wiadomość: ".$_POST['msg'];
+                mail("info@w-biogaz.pl","BIOGAZOWNIA Zapytanie", $emailBody);
+    ?>  
  </body>
 </html>
