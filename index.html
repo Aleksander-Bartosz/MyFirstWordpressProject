@@ -188,8 +188,12 @@
       <script>
       var map;
       function initMap() {
+        var zoomChangeSmall=6;
+        if ( window.outerWidth< 390 ) {
+            zoomChangeSmall=5;
+        }  
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 6,
+          zoom: zoomChangeSmall,
           center: new google.maps.LatLng(52.323424, 19.389433),
           mapTypeId: 'roadmap'
         });
