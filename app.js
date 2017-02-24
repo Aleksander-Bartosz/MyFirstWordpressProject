@@ -38,60 +38,30 @@ $(document).ready(function () {
             changeIcon.removeClass('open');
         }
     });
-// END rwd menu    
-// CSSMap;
-       $("#map-poland").CSSMap({
-          "size": 540,
-          "cities": true,
-          "tooltips": "sticky",
-          "responsive": "auto"
-        });
-// END OF THE CSSMap;
+    // END rwd menu    
+    // Morris code
+    var day_data = [
+                  {"elapsed": "2016", "value": 3400},
+                  {"elapsed": "2017", "value": 2400},
+                  {"elapsed": "2018", "value": 3000},
+                  {"elapsed": "2019", "value": 1223},
+                  {"elapsed": "2020", "value": 1300},
+                  {"elapsed": "2021", "value": 2800},
+                  {"elapsed": "2022", "value": 3000}
+                ];
+                Morris.Line({
+                  element: 'myfirstchart',
+                  data: day_data,
+                  xkey: 'elapsed',
+                  ykeys: ['value'],
+                  labels: ['Nominal Power'],
+                  parseTime: false
+                });
     
-    var catchUnwantedColor = $('#map-poland > ul > li');
     
-    setTimeout( function () {
-        if (catchUnwantedColor.hasClass('active-region')) {
-            catchUnwantedColor.removeClass('active-region');
-    }},50)
-    
+    //End Morris code
     // ScrollTo Code;
-    
-    // END OF THE ScrollTo Code;
-    
-    // Form Validator
-     var form = $('form');
-        form.on('submit', function () {
-            
-            var name = $('#name').val(),
-                mail = $('#mail').val(),
-                theme = $('#theme').val(),
-                msg =$('#msg').val();
-            var error =$('.error');
-            if ( name.length<5 ) {
-                error.eq(0).html('Imie musi mieć min 5 znaków');
-                return false;
-            }
-            else if ( mail.indexOf('@')<1 ) {
-                error.eq(1).html('Zła forma maila');
-                return false;
-            }
-            else if ( theme.length<5 ) {
-                error.eq(2).html('Prosze podać temat min 5 znaków');
-                return false;
-            } 
-            else if ( msg.length<10 ) {
-                error.eq(3).html('Prosze podać wiadomość min 10 znaków');
-                return false;
-            }
-            else {
-                return true;
-            }
-        })
-    // end of Form validator    
-});
-document.addEventListener("DOMContentLoaded", function() {
-   var menuHeight = document.getElementsByTagName('nav')[0].offsetHeight;
+        var menuHeight = document.getElementsByTagName('nav')[0].offsetHeight;
         console.log(menuHeight);
         var elementScroll = document.getElementsByClassName('scroller');
     
@@ -122,4 +92,36 @@ document.addEventListener("DOMContentLoaded", function() {
                 scroll(element);
             });
         }
+
+   // End of scroll code
+    // Form Validator
+     var form = $('form');
+        form.on('submit', function () {
+            
+            var name = $('#name').val(),
+                mail = $('#mail').val(),
+                theme = $('#theme').val(),
+                msg =$('#msg').val();
+            var error =$('.error');
+            if ( name.length<5 ) {
+                error.eq(0).html('Imie musi mieć min 5 znaków');
+                return false;
+            }
+            else if ( mail.indexOf('@')<1 ) {
+                error.eq(1).html('Zła forma maila');
+                return false;
+            }
+            else if ( theme.length<5 ) {
+                error.eq(2).html('Prosze podać temat min 5 znaków');
+                return false;
+            } 
+            else if ( msg.length<10 ) {
+                error.eq(3).html('Prosze podać wiadomość min 10 znaków');
+                return false;
+            }
+            else {
+                return true;
+            }
+        })
+    // END of Form validator    
 });
