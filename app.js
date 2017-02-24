@@ -60,6 +60,7 @@ $(document).ready(function () {
     
     
     //End Morris code
+    
     // ScrollTo Code;
         var menuHeight = document.getElementsByTagName('nav')[0].offsetHeight;
         console.log(menuHeight);
