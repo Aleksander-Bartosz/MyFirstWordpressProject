@@ -38,66 +38,62 @@ $(document).ready(function () {
             changeIcon.removeClass('open');
         }
     });
-// END rwd menu    
-// CSSMap;
-       $("#map-poland").CSSMap({
-          "size": 540,
-          "cities": true,
-          "tooltips": "sticky",
-          "responsive": "auto"
-        });
-// END OF THE CSSMap;
+    // END rwd menu    
+    // Morris code
+    var day_data = [
+                  {"elapsed": "2016", "value": 3400},
+                  {"elapsed": "2017", "value": 2400},
+                  {"elapsed": "2018", "value": 3000},
+                  {"elapsed": "2019", "value": 1223},
+                  {"elapsed": "2020", "value": 1300},
+                  {"elapsed": "2021", "value": 2800},
+                  {"elapsed": "2022", "value": 3000}
+                ];
+                Morris.Line({
+                  element: 'myfirstchart',
+                  data: day_data,
+                  xkey: 'elapsed',
+                  ykeys: ['value'],
+                  labels: ['Nominal Power'],
+                  parseTime: false
+                });
     
-    var catchUnwantedColor = $('#map-poland > ul > li');
     
-    setTimeout( function () {
-        if (catchUnwantedColor.hasClass('active-region')) {
-            catchUnwantedColor.removeClass('active-region');
-    }},50)
-    
+    //End Morris code
     // ScrollTo Code;
-    var rwdMenuHeight = $('.sidenav').height();
-    var navHeight = navCatcher.height();
-    $("body > div > nav > ul > li.navigationMenuAbout").click(function (){
-                $('html, body').animate({
-                    scrollTop: $(".biogazInfo").offset().top-navHeight
-                },2000);
-        });
-      $("body > div > nav > ul > li.navigationMenuBio").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#map-poland").offset().top-navHeight
-                }, 2000);
-            });
-      $("body > div > nav > ul > li.navigationMenuContact").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("footer").offset().top-navHeight
-                }, 2000);
-            });
-    $(".headerParaButton").click(function (){
-                $('html, body').animate({
-                    scrollTop: $(".formKeeper").offset().top-navHeight
-                }, 2000);
-            });
-    $(".rwdMenuAbout").click(function (){
-                var rwdMenuHeight = $('.sidenav').height();
-                $('html, body').animate({
-                    scrollTop: $(".scrollAbout").offset().top-rwdMenuHeight
-                }, 2000);
-            });
-    $(".rwdMenuBio").click(function (){
-                var rwdMenuHeight = $('.sidenav').height();
-                $('html, body').animate({
-                    scrollTop: $(".localKeeper").offset().top-rwdMenuHeight
-                }, 2000);
-            });
-    $(".rwdMenuContact").click(function (){
-                var rwdMenuHeight = $('.sidenav').height();
-                $('html, body').animate({
-                    scrollTop: $("address").offset().top-rwdMenuHeight
-                }, 2000);
-            });
-    // END OF THE ScrollTo Code;
+        var menuHeight = document.getElementsByTagName('nav')[0].offsetHeight;
+        console.log(menuHeight);
+        var elementScroll = document.getElementsByClassName('scroller');
     
+        function scroll(el) {
+          var scrollEl = document.getElementById(el).offsetTop-menuHeight;
+          var start = window.scrollY;
+          var move = 20;
+          var adder =setInterval(function () {
+              var check = window.scrollY;
+              if ( start>scrollEl ) {
+                  start=start-move
+                  
+              }
+              else if ( start<scrollEl ) {
+                  start=start+move;
+                  if ( start>scrollEl ){
+                    clearInterval(adder);
+                  }
+              }
+              window.scrollTo(0, start)
+              console.log(start)
+              
+          },10)
+        }
+        for (var i=0; i<elementScroll.length; i++) {
+            elementScroll[i].addEventListener('click', function () {
+                var element = this.dataset.id;
+                scroll(element);
+            });
+        }
+
+   // End of scroll code
     // Form Validator
      var form = $('form');
         form.on('submit', function () {
@@ -127,5 +123,5 @@ $(document).ready(function () {
                 return true;
             }
         })
-    // end of Form validator    
+    // END of Form validator    
 });

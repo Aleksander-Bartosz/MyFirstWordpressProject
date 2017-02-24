@@ -229,6 +229,7 @@ article {
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 	border-top: 20px solid lightgrey;
+    z-index: 10;
 }
 .biogazInfo {
     height: 400px;
@@ -244,42 +245,49 @@ article img {
 }
 section {
     position: relative;
-    background-image: url(img/grass2.jpg);
     margin-top: 50px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 500px;
+    height: 100%;
     width: 1000px;
+    background-color: white;
+}
+
+table {
+    width: 90%;
+    margin: 30px 0px 30px 0px;
+}
+th {
+    background-color: #61aed4;
+    padding: 10px 0px 10px 0px;
+    color:white;
+}
+tr {
+    background-color: lightgray;
+    text-align: center;
+}
+tr:nth-child(2n+2) {
+    background-color: white;
 }
 .coverSection {
     width: 100%;
     height: 100%;
     display: flex;
-}
-.localKeeper {
-    width: 45%;
-    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-section .localKeeper ul {
-    color:white;
-}
-.iframeLocal {
-    height: 350px;
+.mapChartKeeper {
     width: 90%;
-    margin-left: 5%;
-    background-color: rgba(77, 75, 84, 0.85);
-    -webkit-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+    height: 500px;
+    display: flex;
 }
-.iframeLocal ul {
-   display: flex;
-   align-items: center;
-   flex-direction: column; 
+.localKeeper {
+    width: 50%;
 }
+#map{
+    width: 50%;
+    height: 100%;
+}
+
 .footerInfo {
     display: flex;
     margin-bottom: 20px;
@@ -545,7 +553,15 @@ iframe {
     }
     .localKeeper {
         margin-top: 30px;
-        width: 70%;
+        width: 100%;
+    }
+    .mapChartKeeper {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+    }
+    #map {
+        width: 100%;
     }
     nav {
         width: 750px;
@@ -591,10 +607,6 @@ iframe {
         margin: 25px;
         text-align: center;
     }
-    .poland {
-        position: relative;
-        
-    }
     section {
         height: 100%;
         width: 750px;
@@ -603,16 +615,7 @@ iframe {
         flex-direction: column;
         align-items: center;
     }
-    .iframeLocal  {
-        height: 320px;
-        width: 80%;
-    }
-    .iframeLocal ul h2 {
-       font-size: 20px; 
-    }
-    .iframeLocal ul li {
-       font-size: 14px; 
-    }
+    
     .footerInfoText {
         font-size: 14px;
     }
@@ -708,14 +711,8 @@ iframe {
         flex-direction: column;
     }
     .localKeeper {
-        width: 90%;
+        width: 100%;
         margin-top: 40px;
-    }
-    .cssmap-320 .poland-cities {
-        margin-top: 0;
-    }
-    .poland {
-        top:0;
     }
     footer {
         width: 500px;
@@ -792,14 +789,11 @@ iframe {
         width: 320px;
         margin-top: 15px;
     }
-    .localKeeper ul {
-       text-align: center;
+    .localKeeper {
+       width: 100%;
     }
-    .iframeLocal ul h2 {
-        font-size: 15px;
-    }
-    .iframeLocal ul li {
-        font-size: 12px;
+    .noneRwd {
+        display: none;
     }
     footer {
         width: 320px;
