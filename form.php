@@ -203,7 +203,8 @@
         function addMarker(feature) {
           var marker = new google.maps.Marker({
             position: feature.position,
-            map: map
+            map: map,
+            icon:'css/img/maker.png'   
           });
         }
 
