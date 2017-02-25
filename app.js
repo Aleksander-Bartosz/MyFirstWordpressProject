@@ -18,27 +18,27 @@ $(document).ready(function () {
                     window.history.back();
     });
     
-// RWD menu    
-  $('#nav-icon1').click( function() {
-        var clickMenu = $(this);
-		clickMenu.toggleClass('open');
-        var main = $('.container');
-        var sideNav = $('#mySidenav');
-        if(clickMenu.hasClass('open')) {
-            main.css('padding-top','150px');
-            sideNav.css('height','150px');
-        }
-    });  
-    $('.closebtn').click( function () {
-        var main = $('.container');
-        var sideNav = $('#mySidenav');
-        main.css('padding-top','0px');
-        sideNav.css('height','0%');
-        var changeIcon = $('#nav-icon1');
-        if (changeIcon.hasClass('open')) {
-            changeIcon.removeClass('open');
-        }
-    });
+    // RWD menu    
+      $('#nav-icon1').click( function() {
+            var clickMenu = $(this);
+            clickMenu.toggleClass('open');
+            var main = $('.container');
+            var sideNav = $('#mySidenav');
+            if(clickMenu.hasClass('open')) {
+                main.css('padding-top','150px');
+                sideNav.css('height','150px');
+            }
+        });  
+        $('.closebtn').click( function () {
+            var main = $('.container');
+            var sideNav = $('#mySidenav');
+            main.css('padding-top','0px');
+            sideNav.css('height','0%');
+            var changeIcon = $('#nav-icon1');
+            if (changeIcon.hasClass('open')) {
+                changeIcon.removeClass('open');
+            }
+        });
     // END rwd menu   
     
     // Morris code
@@ -59,8 +59,6 @@ $(document).ready(function () {
                   labels: ['Nominal Power'],
                   parseTime: false
                 });
-    
-    
     //End Morris code
     
     // ScrollTo Code;
