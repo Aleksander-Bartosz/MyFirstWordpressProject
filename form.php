@@ -16,11 +16,6 @@
     <title>WestWind BIOGAZ</title>
   </head>
   <body>
-      <script>
-             $(document).ready(function () {
-               window.location= '#footer';
-            });   
-      </script>
       <div class='container'>
             <nav>
               <div class='language'>
@@ -184,57 +179,60 @@
           </footer>
         </div>
       <script>
-      var map;
-      function initMap() {
-        var zoomChangeSmall=6;
-        if ( window.outerWidth< 390 ) {
-            zoomChangeSmall=5;
-        }  
-        map = new google.maps.Map(document.getElementById('map'), {
-          zoom: zoomChangeSmall,
-          center: new google.maps.LatLng(52.323424, 19.389433),
-          mapTypeId: 'roadmap'
-        });
+          $(document).ready(function () {
+               window.location= '#footer';
+            }); 
+          var map;
+          function initMap() {
+            var zoomChangeSmall=6;
+            if ( window.outerWidth< 390 ) {
+                zoomChangeSmall=5;
+            }  
+            map = new google.maps.Map(document.getElementById('map'), {
+              zoom: zoomChangeSmall,
+              center: new google.maps.LatLng(52.323424, 19.389433),
+              mapTypeId: 'roadmap'
+            });
 
-        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-       
-        function addMarker(feature) {
-          var marker = new google.maps.Marker({
-            position: feature.position,
-            map: map,
-            icon:'css/img/maker.png'   
-          });
-        }
+            var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
-        var features = [
-           {
-            position: new google.maps.LatLng(53.011776, 18.612904),
-            
-          }, {
-            position: new google.maps.LatLng(53.126825, 18.003281),
-            
-          }, {
-            position: new google.maps.LatLng(50.074593, 19.952175),
-            
-          }, {
-            position: new google.maps.LatLng(54.362030, 18.619659),
-            
-          }, {
-            position: new google.maps.LatLng(54.522007, 18.534937),
-            
-          }, {
-            position: new google.maps.LatLng(51.116341, 17.011621),
-            
-          }, {
-            position: new google.maps.LatLng(51.710310, 19.431399),
-            
+            function addMarker(feature) {
+              var marker = new google.maps.Marker({
+                position: feature.position,
+                map: map,
+                icon:'css/img/maker.png'   
+              });
+            }
+
+            var features = [
+               {
+                position: new google.maps.LatLng(53.011776, 18.612904),
+
+              }, {
+                position: new google.maps.LatLng(53.126825, 18.003281),
+
+              }, {
+                position: new google.maps.LatLng(50.074593, 19.952175),
+
+              }, {
+                position: new google.maps.LatLng(54.362030, 18.619659),
+
+              }, {
+                position: new google.maps.LatLng(54.522007, 18.534937),
+
+              }, {
+                position: new google.maps.LatLng(51.116341, 17.011621),
+
+              }, {
+                position: new google.maps.LatLng(51.710310, 19.431399),
+
+              }
+            ];
+
+            for (var i = 0, feature; feature = features[i]; i++) {
+              addMarker(feature);
+            }
           }
-        ];
-
-        for (var i = 0, feature; feature = features[i]; i++) {
-          addMarker(feature);
-        }
-      }
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyL2sNvdz0359UHeTRR4BFTz-yYUbMp-Q&callback=initMap">
