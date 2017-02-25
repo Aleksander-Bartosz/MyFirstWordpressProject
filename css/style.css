@@ -82,10 +82,10 @@ ul li b {
     height: 100%;
     width: 32%;
 }
-#reload:hover {
+.reload:hover {
         cursor: pointer;
 }
-#reloadBack:hover {
+.reloadBack:hover {
     cursor: pointer;
 }
 .clearner {

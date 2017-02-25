@@ -11,10 +11,10 @@ $(document).ready(function () {
             navCatcher.removeClass('scrollOpacity');
         }
     });
-    $('#reload').on('click', function () {
+    $('.reload').on('click', function () {
                     location.reload();
     });
-    $('#reloadBack').on('click', function () {
+    $('.reloadBack').on('click', function () {
                     window.history.back();
     });
 // RWD menu    

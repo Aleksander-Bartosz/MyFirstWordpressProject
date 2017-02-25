@@ -29,7 +29,7 @@
                   <div class='languageItem'>DE</div>
                 </div>
               <div class ='logo'>
-                  <a class='hrefsLinks' id='reload'></a>
+                  <a class='hrefsLinks reloadBack'></a>
                   <a class='hrefsLinks' href="http://www.w-wind.de/" target="_blank"></a>
                   <a class='hrefsLinks' href="http://www.w-solar.pl/pl/" target="_blank"></a>
                   <div class='clearner'></div>
@@ -148,7 +148,6 @@
                 </div>  
           </section>
           <footer id='footer'>
-              
               <div class='footerInfo' id='contact'>
                   <div>
                       <address class='footerInfoText'>
@@ -199,7 +198,6 @@
 
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
        
-
         function addMarker(feature) {
           var marker = new google.maps.Marker({
             position: feature.position,
