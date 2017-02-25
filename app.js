@@ -11,12 +11,13 @@ $(document).ready(function () {
             navCatcher.removeClass('scrollOpacity');
         }
     });
-    $('#reload').on('click', function () {
+    $('.reload').on('click', function () {
                     location.reload();
     });
-    $('#reloadBack').on('click', function () {
+    $('.reloadBack').on('click', function () {
                     window.history.back();
     });
+    
 // RWD menu    
   $('#nav-icon1').click( function() {
         var clickMenu = $(this);
@@ -38,7 +39,8 @@ $(document).ready(function () {
             changeIcon.removeClass('open');
         }
     });
-    // END rwd menu    
+    // END rwd menu   
+    
     // Morris code
     var day_data = [
                   {"elapsed": "2016", "value": 3400},
@@ -93,8 +95,8 @@ $(document).ready(function () {
                 scroll(element);
             });
         }
-
    // End of scroll code
+    
     // Form Validator
      var form = $('form');
         form.on('submit', function () {
