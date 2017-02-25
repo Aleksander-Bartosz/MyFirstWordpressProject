@@ -17,7 +17,6 @@ nav {
     top:0;
     background-color: white;
     z-index: 100;
-   
 }
 nav .normalMenu {
     list-style: none;
@@ -30,12 +29,10 @@ nav .normalMenu li {
     text-align: center;
     width: 100px;
 }
-
 nav .normalMenu li:hover {
     cursor: pointer;
     opacity:0.8;
 }
-
 .language {
     background-color: grey;
     width: 120px;
@@ -83,7 +80,7 @@ ul li b {
     width: 32%;
 }
 .reload:hover {
-        cursor: pointer;
+    cursor: pointer;
 }
 .reloadBack:hover {
     cursor: pointer;
@@ -250,7 +247,6 @@ section {
     width: 1000px;
     background-color: white;
 }
-
 table {
     width: 90%;
     margin: 30px 0px 30px 0px;
@@ -287,13 +283,11 @@ tr:nth-child(2n+2) {
     width: 50%;
     height: 100%;
 }
-
 .footerInfo {
     display: flex;
     margin-bottom: 20px;
     background-color: white;
 }
-
 .coverFooter {
     background-color: white;
     width: 90px;
@@ -591,13 +585,13 @@ iframe {
         left:365px;
     }
     article img {
-    width: 250px;
-    height: 250px;
-    margin: 80px 60px 80px 80px;
+        width: 250px;
+        height: 250px;
+        margin: 80px 60px 80px 80px;
     }
     .biogazInfo {
-    height: 350px;
-    width: 350px;
+        height: 350px;
+        width: 350px;
     }
     .biogazInfo h2 {
         font-size: 20px;
@@ -615,7 +609,6 @@ iframe {
         flex-direction: column;
         align-items: center;
     }
-    
     .footerInfoText {
         font-size: 14px;
     }
@@ -630,7 +623,7 @@ iframe {
         width: 750px;
     }
     .correctMsg {
-    font-size: 20px;
+        font-size: 20px;
     }
 }
 @media all and (max-width: 700px) {
@@ -773,8 +766,8 @@ iframe {
         height: 700px;
     }
     #map{
-    width: 100%;
-    height: 40%;
+        width: 100%;
+        height: 40%;
     }
     .tringle {
         left: 150px;
