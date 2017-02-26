@@ -23,15 +23,15 @@ $(document).ready(function () {
             var clickMenu = $(this);
             clickMenu.toggleClass('open');
             var main = $('.container');
-            var sideNav = $('#mySidenav');
+            var sideNav = $('.sidenav');
             if(clickMenu.hasClass('open')) {
-                main.css('padding-top','150px');
+                main.css('padding-top','150px'); 
                 sideNav.css('height','150px');
             }
         });  
         $('.closebtn').click( function () {
             var main = $('.container');
-            var sideNav = $('#mySidenav');
+            var sideNav = $('.sidenav');
             main.css('padding-top','0px');
             sideNav.css('height','0%');
             var changeIcon = $('#nav-icon1');
