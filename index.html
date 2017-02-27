@@ -5,11 +5,13 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1" name="viewport"/>
     <meta name='description' content='BIO gazownie w polsce, instalacje inwestycje oraz nowe projekty !'/>
     <meta name='keywords' content="biogazownie, westwind, westwind biogaz, biogazownie w polsce, projektowanie biogazowni, produkcja ekoligocznej energii, rolnictwo, Biogazownia - instalacja, organiczne materiały wsadowe,energia odnawialna, ekologiczna energia"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
     <script src="morris.min.js"></script>
+    <script type="text/javascript" src="https://cssmapsplugin.com/5/jquery.cssmap.min.js"></script>
     <script src="app.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="cssmap-poland/cssmap-poland.css" media="screen" />
     <link rel="stylesheet" href="morris.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
@@ -85,7 +87,26 @@
               <div class='tringle'></div>
               <div class='coverSection'>
                   <div class='mapChartKeeper'>
-                    <div id='map'></div>  
+                    <div class='map' id="map-poland">
+                        <ul class="poland">
+                          <li class="pl1"><a href="#dolnoslaskie" rel="nofollow">Dolnośląskie</a></li>
+                          <li class="pl2"><a href="#kujawsko-pomorskie" rel="nofollow">Kujawsko-pomorskie</a></li>
+                          <li class="pl3"><a href="#lubelskie" rel="nofollow">Lubelskie</a></li>
+                          <li class="pl4"><a href="#lubuskie" rel="nofollow">Lubuskie</a></li>
+                          <li class="pl5"><a href="#lodzkie" rel="nofollow">Łódzkie</a></li>
+                          <li class="pl6"><a href="#malopolskie" rel="nofollow">Małopolskie</a></li>
+                          <li class="pl7"><a href="#mazowieckie" rel="nofollow">Mazowieckie</a></li>
+                          <li class="pl8"><a href="#opolskie" rel="nofollow">Opolskie</a></li>
+                          <li class="pl9"><a href="#podkarpackie" rel="nofollow">Podkarpackie</a></li>
+                          <li class="pl10"><a href="#podlaskie" rel="nofollow">Podlaskie</a></li>
+                          <li class="pl11"><a href="#pomorskie" rel="nofollow">Pomorskie</a></li>
+                          <li class="pl12"><a href="#slaskie" rel="nofollow">Śląskie</a></li>
+                          <li class="pl13"><a href="#swietokrzyskie" rel="nofollow">Świętokrzyskie</a></li>
+                          <li class="pl14"><a href="#warminsko-mazurskie" rel="nofollow">Warmińsko-mazurskie</a></li>
+                          <li class="pl15"><a href="#wielkopolskie" rel="nofollow">Wielkopolskie</a></li>
+                          <li class="pl16"><a href="#zachodniopomorskie" rel="nofollow">Zachodniopomorskie</a></li>
+                         </ul>
+                    </div>  
                     <div class='localKeeper' id="myfirstchart"></div>
                   </div>      
                   <table>
@@ -98,43 +119,43 @@
                           </tr>
                           <tr>
                               <td class='noneRwd'>2016</td>
-                              <td>Toruń</td>
+                              <td class='mapColor'>Dolnośląskie</td>
                               <td>3400KW</td>
                               <td>10km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2017</td>
-                              <td>Bydgoszcz</td>
+                              <td class='mapColor'>Lubuskie</td>
                               <td>2400KW</td>
                               <td>12km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2018</td>
-                              <td>Kraków</td>
+                              <td class='mapColor'>Kujawsko-pomorskie</td>
                               <td>3000KW</td>
                               <td>14km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2019</td>
-                              <td>Gdańsk</td>
+                              <td class='mapColor'>Śląskie</td>
                               <td>1223KW</td>
                               <td>5km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2020</td>
-                              <td>Łódz</td>
+                              <td class='mapColor'>Pomorskie</td>
                               <td>1300KW</td>
                               <td>9km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2021</td>
-                              <td>Wrocław</td>
+                              <td class='mapColor'>Wielkopolskie</td>
                               <td>2800KW</td>
                               <td>5km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2022</td>
-                              <td>Gdynia</td>
+                              <td class='mapColor'>Lubuskie</td>
                               <td>3000KW</td>
                               <td>9km<SUP>2</SUP></td>
                           </tr>
@@ -179,63 +200,10 @@
               </div>
           </footer>
         </div>
-      <script>
-          $(document).ready(function () {
-               window.location= '#head';
-            });
-          var map;
-          function initMap() {
-            var zoomChangeSmall=6;
-            if ( window.outerWidth< 390 ) {
-                zoomChangeSmall=5;
-            }  
-            map = new google.maps.Map(document.getElementById('map'), {
-              zoom: zoomChangeSmall,
-              center: new google.maps.LatLng(52.323424, 19.389433),
-              mapTypeId: 'roadmap'
-            });
-
-            var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-
-            function addMarker(feature) {
-              var marker = new google.maps.Marker({
-                position: feature.position,
-                map: map,
-                icon:'css/img/maker.png'  
-              });
-            }
-            var features = [
-               {
-                position: new google.maps.LatLng(53.011776, 18.612904),
-
-              }, {
-                position: new google.maps.LatLng(53.126825, 18.003281),
-
-              }, {
-                position: new google.maps.LatLng(50.074593, 19.952175),
-
-              }, {
-                position: new google.maps.LatLng(54.362030, 18.619659),
-
-              }, {
-                position: new google.maps.LatLng(54.522007, 18.534937),
-
-              }, {
-                position: new google.maps.LatLng(51.116341, 17.011621),
-
-              }, {
-                position: new google.maps.LatLng(51.710310, 19.431399),
-
-              }
-            ];
-
-            for (var i = 0, feature; feature = features[i]; i++) {
-              addMarker(feature);
-            }
-          }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyL2sNvdz0359UHeTRR4BFTz-yYUbMp-Q&callback=initMap">
-    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            window.location= '#head';
+        });
+    </script>  
  </body>
 </html>
