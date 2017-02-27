@@ -119,43 +119,43 @@
                           </tr>
                           <tr>
                               <td class='noneRwd'>2016</td>
-                              <td>Dolnośląskie</td>
+                              <td class='mapColor'>Dolnośląskie</td>
                               <td>3400KW</td>
                               <td>10km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2017</td>
-                              <td>Lubuskie</td>
+                              <td class='mapColor'>Lubuskie</td>
                               <td>2400KW</td>
                               <td>12km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2018</td>
-                              <td>Kujawsko-pomorskie</td>
+                              <td class='mapColor'>Kujawsko-pomorskie</td>
                               <td>3000KW</td>
                               <td>14km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2019</td>
-                              <td>Śląskie</td>
+                              <td class='mapColor'>Śląskie</td>
                               <td>1223KW</td>
                               <td>5km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2020</td>
-                              <td>Pomorskie</td>
+                              <td class='mapColor'>Pomorskie</td>
                               <td>1300KW</td>
                               <td>9km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2021</td>
-                              <td>Wielkopolskie</td>
+                              <td class='mapColor'>Wielkopolskie</td>
                               <td>2800KW</td>
                               <td>5km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2022</td>
-                              <td>Lubuskie</td>
+                              <td class='mapColor'>Lubuskie</td>
                               <td>3000KW</td>
                               <td>9km<SUP>2</SUP></td>
                           </tr>
@@ -201,9 +201,20 @@
         </div>
         <script type="text/javascript">
             $(document).ready(function(){
-                window.location= '#footer';
+                
+                var region = $('.poland').children();
+                var tableTex= $('.mapColor');
+                console.log(tableTex)
+                for (var a=0; a<tableTex.length; a++) {
+                    for (var b=0; b<region.length; b++) {
+                        if ( tableTex.eq(a).text() == region.eq(b).text() ) {
+                            region.eq(b).addClass('active-region');
+                            console.log(region.eq(b));
+                        }
+                    }
+                }
             });
-        </script>  
+        </script>
         <?php
 				$emailBody = "Imie i nazwisko: ".$_POST['name']."\n"
                 ."Email: ".$_POST['email']."\n"
