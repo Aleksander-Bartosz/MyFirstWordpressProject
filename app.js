@@ -62,37 +62,34 @@ $(document).ready(function () {
     //End Morris code
     
     // CSSMap;
+    
         var tools;
         if ( window.innerWidth < 390 ) {
             tools='sticky';
         }
         else {
             tools='visible';
-        }   
+        }  
        $("#map-poland").CSSMap({
           "size": 540,
           "tooltips": tools,
           "responsive": "auto",
-           
-        });
-        var regionColor ='active-region';
-        var region = $('.poland').children();
-        var tableTex= $('.mapColor');
-        var el = [1,3,4,6,7,8,9]
-        
-        for (var i=0; i<tableTex.length; i++) {
-            for (var j=0; j<region.length; j++) {
-                if ( tableTex.eq(i).text() == region.eq(j).text() ) {
-                    region.eq(j).addClass('active-region');
+           onLoad: function(mapObject){
+               mapObject.find('span').off('click');
+                var region = $('.poland').children();
+                var tableTex= $('.mapColor');
+                for (var i=0; i<tableTex.length; i++) {
+                    for (var j=0; j<region.length; j++) {
+                        if ( tableTex.eq(i).text() == region.eq(j).text() ) {
+                            region.eq(j).addClass('active-region');
+                        }
+                    }
                 }
-            }
-        }
+           }
+        });
         
-            
-          
     // END OF THE CSSMap;
 
-    
     // ScrollTo Code;
         var menuHeight = document.getElementsByTagName('nav')[0].offsetHeight;
         
