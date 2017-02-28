@@ -43,32 +43,32 @@ $(document).ready(function () {
     
     // Morris code
     
-    var day_data=[]
-    function dayArray () {
-        
-        var periods = $('.mapColor');
-        var licensedPower = $('.powerSet');
-        var arr =[];
-        for (var i=0; i<periods.length; i++) {
-            var val = {"period": periods.eq(i).text(), "licensed": licensedPower.eq(i).text()};
-            arr.push(val);
+        var day_data=[]
+        function dayArray () {
+
+            var periods = $('.mapColor');
+            var licensedPower = $('.powerSet');
+            var arr =[];
+            for (var i=0; i<periods.length; i++) {
+                var val = {"period": periods.eq(i).text(), "licensed": licensedPower.eq(i).text()};
+                arr.push(val);
+            }
+            for ( var j=0; j<arr.length; j++) {
+                day_data.push(arr[j])
+            }
+            return day_data
         }
-        for ( var j=0; j<arr.length; j++) {
-            day_data.push(arr[j])
-        }
-        return day_data
-    }
-    dayArray();
-    
-    Morris.Bar({
-      element: 'myFirstChart',
-      data: day_data,
-      xkey: 'period',
-      ykeys: ['licensed'],
-      labels: ['Power'],
-      xLabelAngle: 60,
-      gridTextFamily: 'Roboto'    
-    });
+        dayArray();
+
+        Morris.Bar({
+          element: 'myFirstChart',
+          data: day_data,
+          xkey: 'period',
+          ykeys: ['licensed'],
+          labels: ['Power'],
+          xLabelAngle: 60,
+          gridTextFamily: 'Roboto'    
+        });
     //End Morris code
     
     // CSSMap;

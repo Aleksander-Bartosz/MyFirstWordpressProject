@@ -26,7 +26,7 @@
                   <div class='languageItem'>DE</div>
                 </div>
               <div class ='logo'>
-                  <a class='hrefsLinks reloadBack'></a>
+                  <a class='hrefsLinks reload'></a>
                   <a class='hrefsLinks' href="http://www.w-wind.de/" target="_blank"></a>
                   <a class='hrefsLinks' href="http://www.w-solar.pl/pl/" target="_blank"></a>
                   <div class='clearner'></div>
@@ -41,7 +41,7 @@
                   <li class='navigationMenuBio scroller' data-id='bio'><i class="fa fa-bolt fa-3x" aria-hidden="true"></i><br><span><b>Biogazownie</b></span></li>
                   <li class='navigationMenuContact scroller' data-id='contact'><i class="fa fa-comment-o fa-3x" aria-hidden="true"></i><br><span><b>Kontakt</b></span></li>
               </ul>
-                <div id="mySidenav" class="sidenav">
+                <div class="sidenav">
                   <a class="closebtn">&times;</a>
                   <a class='rwdMenuAbout scroller' data-id='about'>O nas</a>
                   <a class='rwdMenuBio scroller' data-id='bio'>Biogazownie</a>
@@ -89,7 +89,7 @@
                   <div class='mapChartKeeper'>
                     <div class='map' id="map-poland">
                         <ul class="poland">
-                           <li class="pl1"><a href="#dolnoslaskie" rel="nofollow">Dolnośląskie</a></li>
+                          <li class="pl1"><a href="#dolnoslaskie" rel="nofollow">Dolnośląskie</a></li>
                           <li class="pl2"><a href="#kujawsko-pomorskie" rel="nofollow">Kujawsko-pomorskie</a></li>
                           <li class="pl3"><a href="#lubelskie" rel="nofollow">Lubelskie</a></li>
                           <li class="pl4"><a href="#lubuskie" rel="nofollow">Lubuskie</a></li>
@@ -107,9 +107,9 @@
                           <li class="pl16"><a href="#zachodniopomorskie" rel="nofollow">Zachodniopomorskie</a></li>
                          </ul>
                     </div>  
-                    <div class='localKeeper' id="myfirstchart"></div>
+                    <div class='localKeeper' id="myFirstChart"></div>
                   </div>      
-                   <table>
+                  <table>
                       <thead>
                           <tr>
                               <th class='noneRwd'>Uruchomienie</th>
@@ -120,43 +120,43 @@
                           <tr>
                               <td class='noneRwd'>2016</td>
                               <td class='mapColor'>Dolnośląskie</td>
-                              <td>3400KW</td>
+                              <td><span class='powerSet'>3400</span>KW</td>
                               <td>10km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2017</td>
                               <td class='mapColor'>Lubuskie</td>
-                              <td>2400KW</td>
+                              <td><span class='powerSet'>2400KW</span></td>
                               <td>12km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2018</td>
                               <td class='mapColor'>Kujawsko-pomorskie</td>
-                              <td>3000KW</td>
+                              <td><span class='powerSet'>3000KW</span></td>
                               <td>14km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2019</td>
                               <td class='mapColor'>Śląskie</td>
-                              <td>1223KW</td>
+                              <td><span class='powerSet'>1223</span>KW</td>
                               <td>5km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2020</td>
                               <td class='mapColor'>Pomorskie</td>
-                              <td>1300KW</td>
+                              <td><span class='powerSet'>1300</span>KW</td>
                               <td>9km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2021</td>
                               <td class='mapColor'>Wielkopolskie</td>
-                              <td>2800KW</td>
+                              <td><span class='powerSet'>2800</span>KW</td>
                               <td>5km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2022</td>
-                              <td class='mapColor'>Lubuskie</td>
-                              <td>3000KW</td>
+                              <td class='mapColor'>Łódzkie</td>
+                              <td><span class='powerSet'>3000</span>KW</td>
                               <td>9km<SUP>2</SUP></td>
                           </tr>
                       </thead>
