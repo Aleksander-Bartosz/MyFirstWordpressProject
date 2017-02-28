@@ -101,37 +101,52 @@ $(document).ready(function () {
     // END OF THE CSSMap;
 
     // ScrollTo Code;
-        var menuHeight = document.getElementsByTagName('nav')[0].offsetHeight;
-        
-        var elementScroll = document.getElementsByClassName('scroller');
-    
-        function scroll(el) {
-          var scrollEl = document.getElementById(el).offsetTop-menuHeight;
-          var start = window.scrollY;
-          var move = 20;
-          var adder =setInterval(function () {
-              var check = window.scrollY;
-              if ( start>scrollEl ) {
-                  start=start-move
-                  
-              }
-              else if ( start<scrollEl ) {
-                  start=start+move;
-                  if ( start>scrollEl ){
-                    clearInterval(adder);
-                  }
-              }
-              window.scrollTo(0, start)
-              console.log(start)
-              
-          },10)
-        }
-        for (var i=0; i<elementScroll.length; i++) {
-            elementScroll[i].addEventListener('click', function () {
-                var element = this.dataset.id;
-                scroll(element);
+        var clickAbout = $('.navigationMenuAbout'),
+            clickBio = $('.navigationMenuBio'),
+            clickContact = $('.navigationMenuContact'),
+            clickRwdAbout = $('.rwdMenuAbout'),
+            clickRwdBio = $('.rwdMenuBio'),
+            clickRwdContact = $('.rwdMenuContact'),
+            clickButton = $('.headerParaButton'),
+            minusNav = $('nav').height();
+            clickAbout.click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#about").offset().top-minusNav
+                }, 1500);
             });
-        }
+            clickRwdAbout.click(function (){
+                var rwdMinus = $('.sidenav').height();
+                $('html, body').animate({
+                    scrollTop: $("#about").offset().top-rwdMinus
+                }, 1500);
+            });
+            clickBio.click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#myFirstChart").offset().top-minusNav
+                }, 1500);
+            });
+            clickRwdBio.click(function (){
+                var rwdMinus = $('.sidenav').height();
+                $('html, body').animate({
+                    scrollTop: $("#myFirstChart").offset().top-rwdMinus
+                }, 1500);
+            });
+            clickContact.click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#footer").offset().top-minusNav
+                }, 1500);
+            });
+            clickRwdContact.click(function (){
+                var rwdMinus = $('.sidenav').height();
+                $('html, body').animate({
+                    scrollTop: $("#footer").offset().top-rwdMinus
+                }, 1500);
+            });
+            clickButton.click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#myFirstChart").offset().top-minusNav
+                }, 1500);
+            });
    // End of scroll code
     
     // Form Validator
