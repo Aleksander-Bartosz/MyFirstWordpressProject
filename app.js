@@ -43,29 +43,38 @@ $(document).ready(function () {
     
     // Morris code
     
-   var day_data = [
-      {"period": "Dolnośląskie", "licensed": 3400},
-      {"period": "Lubuskie", "licensed": 2400},
-      {"period": "Kuj-pomorskie", "licensed": 3000},
-      {"period": "Śląskie", "licensed": 1223},
-      {"period": "Pomorskie", "licensed": 1300},
-      {"period": "Wielkopolskie", "licensed": 2800},
-      {"period": "Łódzkie", "licensed": 3000}
-    ];
+    var day_data=[]
+    function dayArray () {
+        
+        var periods = $('.mapColor');
+        var licensedPower = $('.powerSet');
+        var arr =[];
+        for (var i=0; i<periods.length; i++) {
+            var val = {"period": periods.eq(i).text(), "licensed": licensedPower.eq(i).text()};
+            arr.push(val);
+        }
+        for ( var j=0; j<arr.length; j++) {
+            day_data.push(arr[j])
+        }
+        return day_data
+    }
+    dayArray();
+    
     Morris.Bar({
       element: 'myFirstChart',
       data: day_data,
       xkey: 'period',
       ykeys: ['licensed'],
       labels: ['Power'],
-      xLabelAngle: 60
+      xLabelAngle: 60,
+      gridTextFamily: 'Roboto'    
     });
     //End Morris code
     
     // CSSMap;
     
         var tools;
-        if ( window.innerWidth < 390 ) {
+        if ( window.innerWidth < 490 ) {
             tools='sticky';
         }
         else {
