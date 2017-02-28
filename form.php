@@ -200,21 +200,10 @@
           </footer>
         </div>
         <script type="text/javascript">
-            $(document).ready(function(){
-                
-                var region = $('.poland').children();
-                var tableTex= $('.mapColor');
-                console.log(tableTex)
-                for (var a=0; a<tableTex.length; a++) {
-                    for (var b=0; b<region.length; b++) {
-                        if ( tableTex.eq(a).text() == region.eq(b).text() ) {
-                            region.eq(b).addClass('active-region');
-                            console.log(region.eq(b));
-                        }
-                    }
-                }
-            });
-        </script>
+        $(document).ready(function(){
+            window.location= '#footer';
+        });
+    </script> 
         <?php
 				$emailBody = "Imie i nazwisko: ".$_POST['name']."\n"
                 ."Email: ".$_POST['email']."\n"
