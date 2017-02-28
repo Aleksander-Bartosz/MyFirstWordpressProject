@@ -42,23 +42,24 @@ $(document).ready(function () {
     // END rwd menu   
     
     // Morris code
-    var day_data = [
-                  {"elapsed": "2016", "value": 3400},
-                  {"elapsed": "2017", "value": 2400},
-                  {"elapsed": "2018", "value": 3000},
-                  {"elapsed": "2019", "value": 1223},
-                  {"elapsed": "2020", "value": 1300},
-                  {"elapsed": "2021", "value": 2800},
-                  {"elapsed": "2022", "value": 3000}
-                ];
-                Morris.Line({
-                  element: 'myfirstchart',
-                  data: day_data,
-                  xkey: 'elapsed',
-                  ykeys: ['value'],
-                  labels: ['Nominal Power'],
-                  parseTime: false
-                });
+    
+   var day_data = [
+      {"period": "Dolnośląskie", "licensed": 3400},
+      {"period": "Lubuskie", "licensed": 2400},
+      {"period": "Kuj-pomorskie", "licensed": 3000},
+      {"period": "Śląskie", "licensed": 1223},
+      {"period": "Pomorskie", "licensed": 1300},
+      {"period": "Wielkopolskie", "licensed": 2800},
+      {"period": "Łódzkie", "licensed": 3000}
+    ];
+    Morris.Bar({
+      element: 'myFirstChart',
+      data: day_data,
+      xkey: 'period',
+      ykeys: ['licensed'],
+      labels: ['Power'],
+      xLabelAngle: 60
+    });
     //End Morris code
     
     // CSSMap;
