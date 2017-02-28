@@ -71,7 +71,7 @@
                  <div class='headerParaContainer'>
                           <h1><span  class='greenLogoPart'>West</span><span  class='blueLogoPart'>Wind</span> BIOGAZ</h1>
                           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis odio dictum, hendrerit ex sed, placerat massa. Nulla ac lectus non risus ornare scelerisque sed in odio. Donec venenatis cursus sapien, nec venenatis lacus sollicitudin nec.Umc </p>
-                          <button class='headerParaButton'>Sprawdź</button>
+                          <button class='headerParaButton scroller' data-id='bio'>Sprawdź</button>
                     </div> 
               </ul> 
       </header>
