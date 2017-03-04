@@ -17,7 +17,7 @@ nav {
     position: fixed;
     top:0;
     background-color: white;
-    z-index: 100;
+    z-index: 1001;
 }
 nav .normalMenu {
     list-style: none;
