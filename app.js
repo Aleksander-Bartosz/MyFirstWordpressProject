@@ -67,7 +67,8 @@ $(document).ready(function () {
           ykeys: ['licensed'],
           labels: ['Power'],
           xLabelAngle: 60,
-          gridTextFamily: 'Roboto'    
+          gridTextFamily: 'Roboto',
+          resize : true    
         });
     //End Morris code
     
