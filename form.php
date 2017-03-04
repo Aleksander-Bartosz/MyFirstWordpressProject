@@ -126,16 +126,16 @@
                           <tr>
                               <td class='noneRwd'>2017</td>
                               <td class='mapColor'>Lubuskie</td>
-                              <td><span class='powerSet'>2400KW</span></td>
+                              <td><span class='powerSet'>2400</span>KW</td>
                               <td>12km<SUP>2</SUP></td>
                           </tr>
                           <tr>
                               <td class='noneRwd'>2018</td>
                               <td class='mapColor'>Kujawsko-pomorskie</td>
-                              <td><span class='powerSet'>3000KW</span></td>
+                              <td><span class='powerSet'>3000</span>KW</td>
                               <td>14km<SUP>2</SUP></td>
                           </tr>
-                          <tr>
+                         <tr>
                               <td class='noneRwd'>2019</td>
                               <td class='mapColor'>Śląskie</td>
                               <td><span class='powerSet'>1223</span>KW</td>
@@ -152,12 +152,6 @@
                               <td class='mapColor'>Wielkopolskie</td>
                               <td><span class='powerSet'>2800</span>KW</td>
                               <td>5km<SUP>2</SUP></td>
-                          </tr>
-                          <tr>
-                              <td class='noneRwd'>2022</td>
-                              <td class='mapColor'>Łódzkie</td>
-                              <td><span class='powerSet'>3000</span>KW</td>
-                              <td>9km<SUP>2</SUP></td>
                           </tr>
                       </thead>
                   </table>
