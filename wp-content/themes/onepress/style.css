@@ -130,7 +130,8 @@ html, body {
 }
 .contact-form {
     position: relative;
-    left: 25%;
+    left: 50%;
+    transform: translate(-50%);
 }
 html {
 	box-sizing: border-box;
